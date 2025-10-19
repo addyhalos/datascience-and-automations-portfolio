@@ -46,6 +46,7 @@ You may access my CV [here](CV_ADPH.pdf)
 * [Data Analytics]()
   - Data Visualization
     + [Netflix Dashboard](https://lookerstudio.google.com/u/0/reporting/9a6ae993-fbbc-46e3-bca9-bc8e11692ad5/page/uP4YD) (data visualization, Looker Studio)
+    + [New York Vehicular Accidents](https://lookerstudio.google.com/reporting/8740bf9f-dbc6-4b88-ab55-8bf69f714c7f) (data visualization, Looker Studio)
   - [Data Exploration]()
 
 
