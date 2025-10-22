@@ -43,7 +43,7 @@ You may access my CV [here](CV_ADPH.pdf)
 * Portfolio Projects
 * [Data Engineering](data_engineering)
   - [Emailed Report - FPA Monthly Registered Biofertilizers](data_engineering/FPA_Monthly_Registered_Biofertilizer_Process.ipynb) (javascript, automation)
-  - 
+  - [FMP ETL Pipeline - Scheduled data extraction of Company Financial Metrics](data_engineering/fmp_etl_documentation.ipynb) (ETL, python, automation)
 * [Data Analytics](data_analytics)
   - Data Visualization
     + [Netflix Dashboard](https://lookerstudio.google.com/u/0/reporting/9a6ae993-fbbc-46e3-bca9-bc8e11692ad5/page/uP4YD) (data visualization, Looker Studio)
