@@ -1,0 +1,21 @@
+name: Run FMP ETL
+
+on:
+  workflow_dispatch:
+
+jobs:
+  run-etl:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install dependencies
+        run: |
+          pip install pandas requests sqlite-utils
+      - name: Run ETL
+        env:
+          FMP_KEY: ${{ secrets.FMP_KEY }}
+        run: python data_engineering/fmp_etl.py
