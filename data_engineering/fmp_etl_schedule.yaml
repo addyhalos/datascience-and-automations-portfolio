@@ -1,20 +1,28 @@
 name: Run FMP ETL
 
 on:
+  schedule:
+    # Runs every day at 12:00 UTC (8 PM in Philippines)
+    - cron: "0 12 * * *"
   workflow_dispatch:
 
 jobs:
   run-etl:
     runs-on: ubuntu-latest
+
     steps:
+      - name: Checkout repository
       - uses: actions/checkout@v4
+
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: "3.11"
+
       - name: Install dependencies
         run: |
-          pip install pandas requests sqlite-utils
+          pip install pandas requests sqlite3
+          
       - name: Run ETL
         env:
           FMP_KEY: ${{ secrets.FMP_KEY }}
