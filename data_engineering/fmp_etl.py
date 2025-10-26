@@ -99,7 +99,7 @@ try:
 
         # Write to staging table
         endpoint_df.to_sql(staging_table, conn, if_exists="append", index=False)
-        print(f"✅ WROTE {len(endpoint_df)} rows to `{staging_table}`")
+        print(f"WROTE {len(endpoint_df)} rows to `{staging_table}`")
 
 # 6. TRANSFORM: CLEAN AND LOAD INTO FINAL TABLES
     for table_name in endpoints.keys():
@@ -111,39 +111,42 @@ try:
 
 # 7. DATA CLEANING
 
-        # 1️⃣ Drop duplicate records (same company symbol)
-        df = df.drop_duplicates(keep="last")
+        # a. Drop duplicate records (same company symbol)
+        dedup_cols = [c for c in df.columns if c not in ["fetched_at", "cleaned_at"]]
+        df = df.drop_duplicates(subset=dedup_cols, keep="last")
 
-        # 2️⃣ Remove any rows that failed during API extraction
-        if "error_status" in df.columns:
-            df = df[df["error_status"].isna()]
-            df = df.drop(columns=["error_status"], errors="ignore")
+        # b. Remove any rows that failed during API extraction or error handling
+        error_cols = ["error_status", "error_text", "error"]
+        for col in error_cols:
+            if col in df.columns:
+                df = df[df[col].isna() | (df[col] == "")]
+        df = df.drop(columns=error_cols, errors="ignore")
 
-        # 3️⃣ Standardize column names (lowercase, underscores)
+        # c. Standardize column names (lowercase, underscores)
         df.columns = [c.strip().lower().replace(" ", "_") for c in df.columns]
 
-        # 4️⃣ Drop unnecessary metadata columns
+        # d. Drop unnecessary metadata columns
         df = df.drop(columns=["endpoint"], errors="ignore")
 
-        # 5️⃣ Handle missing or invalid values
+        # e. Handle missing or invalid values
         # Example: Replace empty strings with NaN, fill some numeric NaNs with 0
         df = df.replace("", pd.NA)
         num_cols = df.select_dtypes(include=["number"]).columns
         df[num_cols] = df[num_cols].fillna(0)
 
-        # 6️⃣ Add a timestamp for cleaned data
+        # f. Add a timestamp for cleaned data
         df["cleaned_at"] = pd.Timestamp.utcnow()
 
-        # ======== LOAD INTO FINAL TABLE ========
+# 8. LOAD INTO FINAL TABLE
         df.to_sql(table_name, conn, if_exists="replace", index=False)
-        print(f"✅ Loaded cleaned data into `{table_name}` ({len(df)} rows)")
+        print(f"Loaded cleaned data into `{table_name}` ({len(df)} rows)")
 
 
 finally:
-    # 8. VALIDATION AND SUMMARY
+# 9. VALIDATION AND SUMMARY
     conn.commit()
     tbls = pd.read_sql("SELECT name FROM sqlite_master WHERE type='table' ORDER BY name;", conn)
-    print("\n✅ DATABASE TABLES PRESENT:")
+    print("\nDATABASE TABLES PRESENT:")
     for t in tbls['name']:
         cnt = pd.read_sql(f"SELECT COUNT(*) AS cnt FROM `{t}`", conn).iloc[0]['cnt']
         print(f" - {t}: {cnt} rows")
