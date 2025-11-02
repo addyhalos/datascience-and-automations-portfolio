@@ -32,8 +32,8 @@ You may access my CV [here](CV_ADPH.pdf).
 
 ### Contact Details
 
-1. email: adrieldphalos@gmail.com
-2. [linkedin](https://www.linkedin.com/in/addy-halos/)
+adrieldphalos@gmail.com
+[Linkedin](https://www.linkedin.com/in/addy-halos/)
 
    
 ## Table of Contents
@@ -41,15 +41,15 @@ You may access my CV [here](CV_ADPH.pdf).
 * [About](#about)
 * [Contact Details](#contact-details)
 * Portfolio Projects
-* [Data Engineering](data_engineering)
-  - [Emailed Report - FPA Monthly Registered Biofertilizers](data_engineering/FPA_Monthly_Registered_Biofertilizer_Process.ipynb) (javascript, automation)
-  - [FMP ETL Pipeline - Scheduled data extraction of Company Financial Metrics](data_engineering/fmp_etl_documentation.ipynb) (ETL, python, automation)
-* [Data Analytics](data_analytics)
-  - Data Visualization
-    + [Netflix Dashboard](https://lookerstudio.google.com/u/0/reporting/9a6ae993-fbbc-46e3-bca9-bc8e11692ad5/page/uP4YD) (data visualization, Looker Studio)
-    + [New York Vehicular Accidents](https://lookerstudio.google.com/reporting/8740bf9f-dbc6-4b88-ab55-8bf69f714c7f) (data visualization, Looker Studio)
-    + [FMP Dashboard](https://lookerstudio.google.com/reporting/9896e31d-efa0-4ff6-8493-f52110496c3c) (data visualization,Looker Studio, end-to-end ETL pipeline)
-  - [Data Exploration]()
+   * [Data Engineering](data_engineering)
+     - [Emailed Report - FPA Monthly Registered Biofertilizers](data_engineering/FPA_Monthly_Registered_Biofertilizer_Process.ipynb) (javascript, automation)
+     - [FMP ETL Pipeline - Scheduled data extraction of Company Financial Metrics](data_engineering/fmp_etl_documentation.ipynb) (end-to-end ETL pipeline, python, automation)
+   * [Data Analytics](data_analytics)
+     - Data Visualization
+       + [Netflix Dashboard](https://lookerstudio.google.com/u/0/reporting/9a6ae993-fbbc-46e3-bca9-bc8e11692ad5/page/uP4YD) (data visualization, Looker Studio)
+       + [New York Vehicular Accidents](https://lookerstudio.google.com/reporting/8740bf9f-dbc6-4b88-ab55-8bf69f714c7f) (data visualization, Looker Studio)
+       + [FMP Dashboard](https://lookerstudio.google.com/reporting/9896e31d-efa0-4ff6-8493-f52110496c3c) (data visualization,Looker Studio, end-to-end ETL pipeline)
+     - [Data Exploration]()
 
 
 ## Portfolio Projects
