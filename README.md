@@ -8,7 +8,7 @@ Before anything else, I'd like to thank you for your interest in looking at my p
 
 Now, I'd like to give you an introduction to my background in data science. 
 
-I have an extensive background in the ecommerce industry. I was a pioneer business intelligence team member in Shopee Philippines, now an ecommerce industry giant in our country today. I eventually moved on to Lalafood, a food delivery sister company of the well-known on-demand logistics company Lalamove. My last full time job was with Zoom2u, an ASX-listed on-demand logistics provider based in Sydney, Australia.
+I have an extensive background in the ecommerce industry. I was a pioneer business intelligence team member in Shopee Philippines, now an ecommerce industry giant in our country today. I eventually moved on to Lalafood, a food delivery sister company of the well-known on-demand logistics company Lalamove. My last full time job was with Zoom2u, an ASX-listed on-demand B2B logistics provider based in Sydney, Australia.
 
 Today, I am freelancing, continually expanding my knowledge in all aspects of data science.
 
@@ -53,7 +53,6 @@ You may access my CV [here](CV_ADPH.pdf).
           + Tableau
              + [Page 1](https://public.tableau.com/views/FMPTableauDashboard/CompanyProfile?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
              + [Page 2](https://public.tableau.com/views/FMPTableauDashboard/MarketComparison?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
-     - [Data Exploration]()
 
 
 ## Portfolio Projects
@@ -79,12 +78,14 @@ This project is part of an entire end-to-end ETL project starting from data extr
 data visualization, Looker Studio
 
 ##### B. Description
+This is a dashboard based on an old dataset from Kaggle. It visualizes customer profile, such as gender, preferred gadget, subscription type, etc.
 
 #### II. [New York Vehicular Accidents](https://lookerstudio.google.com/reporting/8740bf9f-dbc6-4b88-ab55-8bf69f714c7f) 
 ##### A. Skills
 data visualization, Looker Studio
 
 ##### B. Description
+The dataset came from [data.gov](https://catalog.data.gov/dataset/motor-vehicle-collisions-crashes). It gives a broken down view in order to analyze vehicular accidents in New York. Accidents are broken down into vehicle type, accident reason, death reason, etc.
 
 #### III. FMP Dashboard
 ##### A. Links
@@ -97,4 +98,4 @@ data visualization, Looker Studio
 data visualization, Looker Studio, end-to-end ETL pipeline
 
 ##### C. Description
-
+These two dashboards on different platforms creates a visualization of the data extracted from the financial modeling prep API. The dashboards focus on the stock performance of five well-known companies in the USA.
