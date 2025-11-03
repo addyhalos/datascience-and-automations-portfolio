@@ -43,18 +43,50 @@ adrieldphalos@gmail.com
 * Portfolio Projects
    * [Data Engineering](data_engineering)
      - [Emailed Report - FPA Monthly Registered Biofertilizers](data_engineering/FPA_Monthly_Registered_Biofertilizer_Process.ipynb) (javascript, automation)
-     - [FMP ETL Pipeline - Scheduled data extraction of Company Financial Metrics](data_engineering/fmp_etl_documentation.ipynb) (end-to-end ETL pipeline, python, automation)
+     - [FMP ETL Pipeline - Scheduled Data Extraction of Company Financial Metrics](data_engineering/fmp_etl_documentation.ipynb) (end-to-end ETL pipeline, python, automation)
    * [Data Analytics](data_analytics)
      - Data Visualization
        + [Netflix Dashboard](https://lookerstudio.google.com/u/0/reporting/9a6ae993-fbbc-46e3-bca9-bc8e11692ad5/page/uP4YD) (data visualization, Looker Studio)
        + [New York Vehicular Accidents](https://lookerstudio.google.com/reporting/8740bf9f-dbc6-4b88-ab55-8bf69f714c7f) (data visualization, Looker Studio)
-       + [FMP Dashboard](https://lookerstudio.google.com/reporting/9896e31d-efa0-4ff6-8493-f52110496c3c) (data visualization,Looker Studio, end-to-end ETL pipeline)
+       + FMP Dashboard (data visualization, Looker Studio, Tableau, end-to-end ETL pipeline)
+          + [Looker Studio](https://lookerstudio.google.com/reporting/9896e31d-efa0-4ff6-8493-f52110496c3c)
+          + Tableau [(1)]((https://public.tableau.com/app/profile/adriel.david.halos/viz/FMPTableauDashboard/CompanyProfile?publish=yes))[(2)]((https://public.tableau.com/app/profile/adriel.david.halos/viz/FMPTableauDashboard/MarketComparison?publish=yes))
      - [Data Exploration]()
 
 
 ## Portfolio Projects
 
 ### Data Engineering
+#### I. [Emailed Report - FPA Monthly Registered Biofertilizers](data_engineering/FPA_Monthly_Registered_Biofertilizer_Process.ipynb) 
+   ##### Skills 
+   javascript, etl, scraping, automation
+
+   ##### Description
+   This project takes the list of all registered products under the Fertilizer and Pesticide Authority from their [website]() and filters the biofertilizer products that are based on the bacteria azospirillum. The Excel file is exported, contents are processed as a dataframe, azospirillum-based products are filtered, and finally sent as an email to specific recipients.
+   
+#### II. [FMP ETL Pipeline - Scheduled Data Extraction of Company Financial Metrics](data_engineering/fmp_etl_documentation.ipynb) 
+   ##### Skills
+   end-to-end ETL pipeline, python, automation
+   
+   ##### Description
+   This project is part of an entire end-to-end ETL project starting from data extraction via [FMP API]() up to a fully-functioning dashboard.
 
 ### Data Analytics
+#### I. [Netflix Dashboard](https://lookerstudio.google.com/u/0/reporting/9a6ae993-fbbc-46e3-bca9-bc8e11692ad5/page/uP4YD) 
+   ##### Skills
+   data visualization, Looker Studio
+   
+   ##### Description
+   
+#### II. [New York Vehicular Accidents](https://lookerstudio.google.com/reporting/8740bf9f-dbc6-4b88-ab55-8bf69f714c7f) 
+   ##### Skills
+   data visualization, Looker Studio
+   
+   ##### Description
+   
+#### III. [FMP Dashboard](https://lookerstudio.google.com/reporting/9896e31d-efa0-4ff6-8493-f52110496c3c) 
+   ##### Skills
+   data visualization,Looker Studio, end-to-end ETL pipeline
+   
+   ##### Description
 
