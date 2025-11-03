@@ -42,7 +42,7 @@ adrieldphalos@gmail.com
 * [Contact Details](#contact-details)
 * Portfolio Projects
    * [Data Engineering](data_engineering)
-     - [Emailed Report - FPA Monthly Registered Biofertilizers](data_engineering/FPA_Monthly_Registered_Biofertilizer_Process.ipynb) (javascript, automation)
+     - [Emailed Report - FPA Monthly Registered Biofertilizers](data_engineering/FPA_Monthly_Registered_Biofertilizer_Process.ipynb) (javascript, automation, scraping)
      - [FMP ETL Pipeline - Scheduled Data Extraction of Company Financial Metrics](data_engineering/fmp_etl_documentation.ipynb) (end-to-end ETL pipeline, python, automation)
    * [Data Analytics](data_analytics)
      - Data Visualization
@@ -51,8 +51,8 @@ adrieldphalos@gmail.com
        + FMP Dashboard (data visualization, Looker Studio, Tableau, end-to-end ETL pipeline)
           + [Looker Studio](https://lookerstudio.google.com/reporting/9896e31d-efa0-4ff6-8493-f52110496c3c)
           + Tableau
-             + [Page 1]((https://public.tableau.com/app/profile/adriel.david.halos/viz/FMPTableauDashboard/CompanyProfile?publish=yes))
-             + [Page 2]((https://public.tableau.com/app/profile/adriel.david.halos/viz/FMPTableauDashboard/MarketComparison?publish=yes))
+             + [Page 1](https://public.tableau.com/views/FMPTableauDashboard/CompanyProfile?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
+             + [Page 2](https://public.tableau.com/views/FMPTableauDashboard/MarketComparison?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
      - [Data Exploration]()
 
 
@@ -86,9 +86,15 @@ adrieldphalos@gmail.com
    
    ##### Description
    
-#### III. [FMP Dashboard](https://lookerstudio.google.com/reporting/9896e31d-efa0-4ff6-8493-f52110496c3c) 
+#### III. FMP Dashboard
    ##### Skills
-   data visualization,Looker Studio, end-to-end ETL pipeline
+   - [Looker Studio](https://lookerstudio.google.com/reporting/9896e31d-efa0-4ff6-8493-f52110496c3c)
+   - Tableau
+     + [Page 1](https://public.tableau.com/views/FMPTableauDashboard/CompanyProfile?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
+     + [Page 2](https://public.tableau.com/views/FMPTableauDashboard/MarketComparison?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
+
+   ##### Skills
+   data visualization, Looker Studio, end-to-end ETL pipeline
    
    ##### Description
 
