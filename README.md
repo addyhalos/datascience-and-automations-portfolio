@@ -32,8 +32,8 @@ You may access my CV [here](CV_ADPH.pdf).
 
 ### Contact Details
 
-adrieldphalos@gmail.com
-[Linkedin](https://www.linkedin.com/in/addy-halos/)
+- adrieldphalos@gmail.com
+- [LinkedIn](https://www.linkedin.com/in/addy-halos/)
 
    
 ## Table of Contents
@@ -60,41 +60,41 @@ adrieldphalos@gmail.com
 
 ### Data Engineering
 #### I. [Emailed Report - FPA Monthly Registered Biofertilizers](data_engineering/FPA_Monthly_Registered_Biofertilizer_Process.ipynb) 
-   ##### Skills 
-   javascript, etl, scraping, automation
+##### A. Skills 
+javascript, etl, scraping, automation
 
-   ##### Description
-   This project takes the list of all registered products under the Fertilizer and Pesticide Authority from their [website]() and filters the biofertilizer products that are based on the bacteria azospirillum. The Excel file is exported, contents are processed as a dataframe, azospirillum-based products are filtered, and finally sent as an email to specific recipients.
+##### B. Description
+This project takes the list of all registered products under the Fertilizer and Pesticide Authority from their [website]() and filters the biofertilizer products that are based on the bacteria azospirillum. The Excel file is exported, contents are processed as a dataframe, azospirillum-based products are filtered, and finally sent as an email to specific recipients.
    
 #### II. [FMP ETL Pipeline - Scheduled Data Extraction of Company Financial Metrics](data_engineering/fmp_etl_documentation.ipynb) 
-   ##### Skills
-   end-to-end ETL pipeline, python, automation
-   
-   ##### Description
-   This project is part of an entire end-to-end ETL project starting from data extraction via [FMP API]() up to a fully-functioning dashboard.
+##### A. Skills
+end-to-end ETL pipeline, python, automation
+
+##### B. Description
+This project is part of an entire end-to-end ETL project starting from data extraction via [FMP API](https://site.financialmodelingprep.com/developer/docs) up to a fully-functioning dashboard. From data extraction, the data is loaded into staging tables in the [nyse_financials.db](data_engineering/data/nyse_financials.db) file in this repo. After data cleaning, it is loaded into the main tables in the same database. SQL queries built into the script are ran to summarize the data, and finally loaded into tabs in Google sheets. This sheet is used as data sources for both [Looker Studio](######links) and [Tableau](######links) dashboards.
 
 ### Data Analytics
 #### I. [Netflix Dashboard](https://lookerstudio.google.com/u/0/reporting/9a6ae993-fbbc-46e3-bca9-bc8e11692ad5/page/uP4YD) 
-   ##### Skills
-   data visualization, Looker Studio
-   
-   ##### Description
-   
-#### II. [New York Vehicular Accidents](https://lookerstudio.google.com/reporting/8740bf9f-dbc6-4b88-ab55-8bf69f714c7f) 
-   ##### Skills
-   data visualization, Looker Studio
-   
-   ##### Description
-   
-#### III. FMP Dashboard
-   ##### Skills
-   - [Looker Studio](https://lookerstudio.google.com/reporting/9896e31d-efa0-4ff6-8493-f52110496c3c)
-   - Tableau
-     + [Page 1](https://public.tableau.com/views/FMPTableauDashboard/CompanyProfile?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
-     + [Page 2](https://public.tableau.com/views/FMPTableauDashboard/MarketComparison?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
+##### A. Skills
+data visualization, Looker Studio
 
-   ##### Skills
-   data visualization, Looker Studio, end-to-end ETL pipeline
-   
-   ##### Description
+##### B. Description
+
+#### II. [New York Vehicular Accidents](https://lookerstudio.google.com/reporting/8740bf9f-dbc6-4b88-ab55-8bf69f714c7f) 
+##### A. Skills
+data visualization, Looker Studio
+
+##### B. Description
+
+#### III. FMP Dashboard
+##### A. Links
+- [Looker Studio](https://lookerstudio.google.com/reporting/9896e31d-efa0-4ff6-8493-f52110496c3c)
+- Tableau
+  + [Page 1](https://public.tableau.com/views/FMPTableauDashboard/CompanyProfile?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
+  + [Page 2](https://public.tableau.com/views/FMPTableauDashboard/MarketComparison?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
+
+##### B. Skills
+data visualization, Looker Studio, end-to-end ETL pipeline
+
+##### C. Description
 
