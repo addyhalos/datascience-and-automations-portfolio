@@ -25,27 +25,28 @@ endpoints = {
 
 
 # 3. LOAD API KEY 
-"""
+#"""
 # Option 1: Local Key - This is for running this script in your local machine. You will need a local copy of the API Key in the key_path
 if not key_path.exists():
     raise FileNotFoundError(f"keys.json not found at {key_path}")
 with key_path.open("r", encoding="utf-8") as fh:
     data = json.load(fh)
 api_key = data.get("fmp_key")
-"""
+#"""
 
 # Option 2: Github Secret - Use when running on Github Actions - API Key is saved in Github Secrets for this to work
+"""
 api_key = os.getenv("FMP_KEY")
 if not api_key:
     raise ValueError("FMP_KEY not found in GitHub Secrets")
 data_dir = Path("data_engineering/data")
 db_path = data_dir / "nyse_financials.db"
-    
+"""    
+
 # 4. CONNECT TO DATABASE (STAGING + FINAL IN SAME FILE)
 data_dir.mkdir(exist_ok=True)
 session = requests.Session()
 conn = sql.connect(db_path)
-
 
 # 5. EXTRACT AND LOAD INTO STAGING TABLES
 try:

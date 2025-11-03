@@ -1,0 +1,2275 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20252.25.0514.2217                               -->
+<workbook original-version='18.1' source-build='2025.2.0 (20252.25.0514.2217)' source-platform='mac' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+    <ZoneBackgroundTransparency />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='company_financial_summary+ (FMP Report)' inline='true' name='federated.00try8e0fmt8zm12xlzqd1jc8f7n' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='FMP Report' name='cloudfile:googledrive-excel-direct.0ophkrw17drhot11b8wdl1sju3cv'>
+            <connection class='cloudfile:googledrive-excel-direct' cleaning='no' cloudFileExtension='xlsx' cloudFileId='1PoCHCiYhW_ZFRMuCnsw65GNHUY3CRRqN_fC9gDnb_bI' cloudFileMetadata_-_folder='root' cloudFileName='FMP Report.xlsx' cloudFileProvider='googledrive' cloudFileRequestURL='https://www.googleapis.com/drive/v3/files/1PoCHCiYhW_ZFRMuCnsw65GNHUY3CRRqN_fC9gDnb_bI/export?mimeType=application/vnd.openxmlformats-officedocument.spreadsheetml.sheet' compat='no' dataRefreshTime='' filename='FMP Report.xlsx' interpretationMode='0' server='' server-oauth='' username='adrieldphalos@gmail.com' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation type='collection'>
+          <relation connection='cloudfile:googledrive-excel-direct.0ophkrw17drhot11b8wdl1sju3cv' name='company_financial_summary' table='[company_financial_summary$]' type='table'>
+            <columns gridOrigin='A1:Z6:no:A1:Z6:0' header='yes' outcome='6'>
+              <column datatype='string' name='symbol' ordinal='0' />
+              <column datatype='string' name='companyName' ordinal='1' />
+              <column datatype='string' name='sector' ordinal='2' />
+              <column datatype='string' name='industry' ordinal='3' />
+              <column datatype='string' name='ceo' ordinal='4' />
+              <column datatype='string' name='city' ordinal='5' />
+              <column datatype='string' name='state' ordinal='6' />
+              <column datatype='date' name='ipoDate' ordinal='7' />
+              <column datatype='real' name='lastDividend' ordinal='8' />
+              <column datatype='string' name='website' ordinal='9' />
+              <column datatype='real' name='price' ordinal='10' />
+              <column datatype='integer' name='marketCap' ordinal='11' />
+              <column datatype='real' name='changePercentage' ordinal='12' />
+              <column datatype='date' name='financial_date' ordinal='13' />
+              <column datatype='integer' name='revenue' ordinal='14' />
+              <column datatype='integer' name='netIncome' ordinal='15' />
+              <column datatype='real' name='eps' ordinal='16' />
+              <column datatype='real' name='pe_ratio' ordinal='17' />
+              <column datatype='real' name='roe' ordinal='18' />
+              <column datatype='real' name='currentRatio' ordinal='19' />
+              <column datatype='real' name='debtToEquityRatio' ordinal='20' />
+              <column datatype='real' name='returnOnAssets' ordinal='21' />
+              <column datatype='real' name='returnOnInvestedCapital' ordinal='22' />
+              <column datatype='real' name='returnOnEquity' ordinal='23' />
+              <column datatype='real' name='freeCashFlowYield' ordinal='24' />
+              <column datatype='integer' name='enterpriseValue' ordinal='25' />
+            </columns>
+          </relation>
+          <relation connection='cloudfile:googledrive-excel-direct.0ophkrw17drhot11b8wdl1sju3cv' name='company_time_series' table='[company_time_series$]' type='table'>
+            <columns gridOrigin='A1:Z30:no:A1:Z30:0' header='yes' outcome='2'>
+              <column datatype='string' name='symbol' ordinal='0' />
+              <column datatype='date' name='date' ordinal='1' />
+              <column datatype='integer' name='revenue' ordinal='2' />
+              <column datatype='integer' name='netIncome' ordinal='3' />
+              <column datatype='real' name='eps' ordinal='4' />
+              <column datatype='integer' name='operatingIncome' ordinal='5' />
+              <column datatype='integer' name='ebitda' ordinal='6' />
+              <column datatype='real' name='priceToEarningsRatio' ordinal='7' />
+              <column datatype='real' name='priceToBookRatio' ordinal='8' />
+              <column datatype='real' name='currentRatio' ordinal='9' />
+              <column datatype='real' name='debtToEquityRatio' ordinal='10' />
+              <column datatype='real' name='ebitdaMargin' ordinal='11' />
+              <column datatype='real' name='bookValuePerShare' ordinal='12' />
+              <column datatype='real' name='netIncomePerShare' ordinal='13' />
+              <column datatype='real' name='shareholdersEquityPerShare' ordinal='14' />
+              <column datatype='real' name='roe' ordinal='15' />
+              <column datatype='integer' name='marketCap' ordinal='16' />
+              <column datatype='integer' name='enterpriseValue' ordinal='17' />
+              <column datatype='real' name='freeCashFlowToFirm' ordinal='18' />
+              <column datatype='integer' name='freeCashFlowToEquity' ordinal='19' />
+              <column datatype='real' name='returnOnAssets' ordinal='20' />
+              <column datatype='real' name='returnOnInvestedCapital' ordinal='21' />
+              <column datatype='real' name='returnOnEquity' ordinal='22' />
+              <column datatype='integer' name='income_fiscalyear' ordinal='23' />
+              <column datatype='integer' name='ratios_fiscalyear' ordinal='24' />
+              <column datatype='integer' name='keymetrics_fiscalyear' ordinal='25' />
+            </columns>
+          </relation>
+        </relation>
+        <cols>
+          <map key='[bookValuePerShare]' value='[company_time_series].[bookValuePerShare]' />
+          <map key='[ceo]' value='[company_financial_summary].[ceo]' />
+          <map key='[changePercentage]' value='[company_financial_summary].[changePercentage]' />
+          <map key='[city]' value='[company_financial_summary].[city]' />
+          <map key='[companyName]' value='[company_financial_summary].[companyName]' />
+          <map key='[currentRatio (company!time!series)]' value='[company_time_series].[currentRatio]' />
+          <map key='[currentRatio]' value='[company_financial_summary].[currentRatio]' />
+          <map key='[date]' value='[company_time_series].[date]' />
+          <map key='[debtToEquityRatio (company!time!series)]' value='[company_time_series].[debtToEquityRatio]' />
+          <map key='[debtToEquityRatio]' value='[company_financial_summary].[debtToEquityRatio]' />
+          <map key='[ebitdaMargin]' value='[company_time_series].[ebitdaMargin]' />
+          <map key='[ebitda]' value='[company_time_series].[ebitda]' />
+          <map key='[enterpriseValue (company!time!series)]' value='[company_time_series].[enterpriseValue]' />
+          <map key='[enterpriseValue]' value='[company_financial_summary].[enterpriseValue]' />
+          <map key='[eps (company!time!series)]' value='[company_time_series].[eps]' />
+          <map key='[eps]' value='[company_financial_summary].[eps]' />
+          <map key='[financial_date]' value='[company_financial_summary].[financial_date]' />
+          <map key='[freeCashFlowToEquity]' value='[company_time_series].[freeCashFlowToEquity]' />
+          <map key='[freeCashFlowToFirm]' value='[company_time_series].[freeCashFlowToFirm]' />
+          <map key='[freeCashFlowYield]' value='[company_financial_summary].[freeCashFlowYield]' />
+          <map key='[income_fiscalyear]' value='[company_time_series].[income_fiscalyear]' />
+          <map key='[industry]' value='[company_financial_summary].[industry]' />
+          <map key='[ipoDate]' value='[company_financial_summary].[ipoDate]' />
+          <map key='[keymetrics_fiscalyear]' value='[company_time_series].[keymetrics_fiscalyear]' />
+          <map key='[lastDividend]' value='[company_financial_summary].[lastDividend]' />
+          <map key='[marketCap (company!time!series)]' value='[company_time_series].[marketCap]' />
+          <map key='[marketCap]' value='[company_financial_summary].[marketCap]' />
+          <map key='[netIncome (company!time!series)]' value='[company_time_series].[netIncome]' />
+          <map key='[netIncomePerShare]' value='[company_time_series].[netIncomePerShare]' />
+          <map key='[netIncome]' value='[company_financial_summary].[netIncome]' />
+          <map key='[operatingIncome]' value='[company_time_series].[operatingIncome]' />
+          <map key='[pe_ratio]' value='[company_financial_summary].[pe_ratio]' />
+          <map key='[priceToBookRatio]' value='[company_time_series].[priceToBookRatio]' />
+          <map key='[priceToEarningsRatio]' value='[company_time_series].[priceToEarningsRatio]' />
+          <map key='[price]' value='[company_financial_summary].[price]' />
+          <map key='[ratios_fiscalyear]' value='[company_time_series].[ratios_fiscalyear]' />
+          <map key='[returnOnAssets (company!time!series)]' value='[company_time_series].[returnOnAssets]' />
+          <map key='[returnOnAssets]' value='[company_financial_summary].[returnOnAssets]' />
+          <map key='[returnOnEquity (company!time!series)]' value='[company_time_series].[returnOnEquity]' />
+          <map key='[returnOnEquity]' value='[company_financial_summary].[returnOnEquity]' />
+          <map key='[returnOnInvestedCapital (company!time!series)]' value='[company_time_series].[returnOnInvestedCapital]' />
+          <map key='[returnOnInvestedCapital]' value='[company_financial_summary].[returnOnInvestedCapital]' />
+          <map key='[revenue (company!time!series)]' value='[company_time_series].[revenue]' />
+          <map key='[revenue]' value='[company_financial_summary].[revenue]' />
+          <map key='[roe (company!time!series)]' value='[company_time_series].[roe]' />
+          <map key='[roe]' value='[company_financial_summary].[roe]' />
+          <map key='[sector]' value='[company_financial_summary].[sector]' />
+          <map key='[shareholdersEquityPerShare]' value='[company_time_series].[shareholdersEquityPerShare]' />
+          <map key='[state]' value='[company_financial_summary].[state]' />
+          <map key='[symbol (company!time!series)]' value='[company_time_series].[symbol]' />
+          <map key='[symbol]' value='[company_financial_summary].[symbol]' />
+          <map key='[website]' value='[company_financial_summary].[website]' />
+        </cols>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[company_financial_summary]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:Z6:no:A1:Z6:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[company_time_series]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:Z30:no:A1:Z30:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>2</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>symbol</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[symbol]</local-name>
+            <parent-name>[company_financial_summary]</parent-name>
+            <remote-alias>symbol</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RPH_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[company!financial!summary_E639979B5023451796994A9FB79DA15E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>companyName</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[companyName]</local-name>
+            <parent-name>[company_financial_summary]</parent-name>
+            <remote-alias>companyName</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RPH_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[company!financial!summary_E639979B5023451796994A9FB79DA15E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sector</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[sector]</local-name>
+            <parent-name>[company_financial_summary]</parent-name>
+            <remote-alias>sector</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RPH_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[company!financial!summary_E639979B5023451796994A9FB79DA15E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>industry</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[industry]</local-name>
+            <parent-name>[company_financial_summary]</parent-name>
+            <remote-alias>industry</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RPH_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[company!financial!summary_E639979B5023451796994A9FB79DA15E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ceo</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[ceo]</local-name>
+            <parent-name>[company_financial_summary]</parent-name>
+            <remote-alias>ceo</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RPH_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[company!financial!summary_E639979B5023451796994A9FB79DA15E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>city</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[city]</local-name>
+            <parent-name>[company_financial_summary]</parent-name>
+            <remote-alias>city</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RPH_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[company!financial!summary_E639979B5023451796994A9FB79DA15E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>state</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[state]</local-name>
+            <parent-name>[company_financial_summary]</parent-name>
+            <remote-alias>state</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RPH_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[company!financial!summary_E639979B5023451796994A9FB79DA15E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ipoDate</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[ipoDate]</local-name>
+            <parent-name>[company_financial_summary]</parent-name>
+            <remote-alias>ipoDate</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <object-id>[company!financial!summary_E639979B5023451796994A9FB79DA15E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>lastDividend</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[lastDividend]</local-name>
+            <parent-name>[company_financial_summary]</parent-name>
+            <remote-alias>lastDividend</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[company!financial!summary_E639979B5023451796994A9FB79DA15E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>website</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[website]</local-name>
+            <parent-name>[company_financial_summary]</parent-name>
+            <remote-alias>website</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RPH_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[company!financial!summary_E639979B5023451796994A9FB79DA15E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>price</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[price]</local-name>
+            <parent-name>[company_financial_summary]</parent-name>
+            <remote-alias>price</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[company!financial!summary_E639979B5023451796994A9FB79DA15E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>marketCap</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[marketCap]</local-name>
+            <parent-name>[company_financial_summary]</parent-name>
+            <remote-alias>marketCap</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[company!financial!summary_E639979B5023451796994A9FB79DA15E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>changePercentage</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[changePercentage]</local-name>
+            <parent-name>[company_financial_summary]</parent-name>
+            <remote-alias>changePercentage</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[company!financial!summary_E639979B5023451796994A9FB79DA15E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>financial_date</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[financial_date]</local-name>
+            <parent-name>[company_financial_summary]</parent-name>
+            <remote-alias>financial_date</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <object-id>[company!financial!summary_E639979B5023451796994A9FB79DA15E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>revenue</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[revenue]</local-name>
+            <parent-name>[company_financial_summary]</parent-name>
+            <remote-alias>revenue</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[company!financial!summary_E639979B5023451796994A9FB79DA15E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>netIncome</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[netIncome]</local-name>
+            <parent-name>[company_financial_summary]</parent-name>
+            <remote-alias>netIncome</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[company!financial!summary_E639979B5023451796994A9FB79DA15E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>eps</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[eps]</local-name>
+            <parent-name>[company_financial_summary]</parent-name>
+            <remote-alias>eps</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[company!financial!summary_E639979B5023451796994A9FB79DA15E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>pe_ratio</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[pe_ratio]</local-name>
+            <parent-name>[company_financial_summary]</parent-name>
+            <remote-alias>pe_ratio</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[company!financial!summary_E639979B5023451796994A9FB79DA15E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>roe</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[roe]</local-name>
+            <parent-name>[company_financial_summary]</parent-name>
+            <remote-alias>roe</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[company!financial!summary_E639979B5023451796994A9FB79DA15E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>currentRatio</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[currentRatio]</local-name>
+            <parent-name>[company_financial_summary]</parent-name>
+            <remote-alias>currentRatio</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[company!financial!summary_E639979B5023451796994A9FB79DA15E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>debtToEquityRatio</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[debtToEquityRatio]</local-name>
+            <parent-name>[company_financial_summary]</parent-name>
+            <remote-alias>debtToEquityRatio</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[company!financial!summary_E639979B5023451796994A9FB79DA15E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>returnOnAssets</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[returnOnAssets]</local-name>
+            <parent-name>[company_financial_summary]</parent-name>
+            <remote-alias>returnOnAssets</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[company!financial!summary_E639979B5023451796994A9FB79DA15E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>returnOnInvestedCapital</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[returnOnInvestedCapital]</local-name>
+            <parent-name>[company_financial_summary]</parent-name>
+            <remote-alias>returnOnInvestedCapital</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[company!financial!summary_E639979B5023451796994A9FB79DA15E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>returnOnEquity</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[returnOnEquity]</local-name>
+            <parent-name>[company_financial_summary]</parent-name>
+            <remote-alias>returnOnEquity</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[company!financial!summary_E639979B5023451796994A9FB79DA15E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>freeCashFlowYield</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[freeCashFlowYield]</local-name>
+            <parent-name>[company_financial_summary]</parent-name>
+            <remote-alias>freeCashFlowYield</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[company!financial!summary_E639979B5023451796994A9FB79DA15E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>enterpriseValue</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[enterpriseValue]</local-name>
+            <parent-name>[company_financial_summary]</parent-name>
+            <remote-alias>enterpriseValue</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[company!financial!summary_E639979B5023451796994A9FB79DA15E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>symbol</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[symbol (company!time!series)]</local-name>
+            <parent-name>[company_time_series]</parent-name>
+            <remote-alias>symbol</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RPH_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[company!time!series_F2A02A6FEF584C0185A0488C86DCE2CA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>date</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[date]</local-name>
+            <parent-name>[company_time_series]</parent-name>
+            <remote-alias>date</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <object-id>[company!time!series_F2A02A6FEF584C0185A0488C86DCE2CA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>revenue</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[revenue (company!time!series)]</local-name>
+            <parent-name>[company_time_series]</parent-name>
+            <remote-alias>revenue</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[company!time!series_F2A02A6FEF584C0185A0488C86DCE2CA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>netIncome</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[netIncome (company!time!series)]</local-name>
+            <parent-name>[company_time_series]</parent-name>
+            <remote-alias>netIncome</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[company!time!series_F2A02A6FEF584C0185A0488C86DCE2CA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>eps</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[eps (company!time!series)]</local-name>
+            <parent-name>[company_time_series]</parent-name>
+            <remote-alias>eps</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[company!time!series_F2A02A6FEF584C0185A0488C86DCE2CA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>operatingIncome</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[operatingIncome]</local-name>
+            <parent-name>[company_time_series]</parent-name>
+            <remote-alias>operatingIncome</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[company!time!series_F2A02A6FEF584C0185A0488C86DCE2CA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ebitda</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[ebitda]</local-name>
+            <parent-name>[company_time_series]</parent-name>
+            <remote-alias>ebitda</remote-alias>
+            <ordinal>32</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[company!time!series_F2A02A6FEF584C0185A0488C86DCE2CA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>priceToEarningsRatio</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[priceToEarningsRatio]</local-name>
+            <parent-name>[company_time_series]</parent-name>
+            <remote-alias>priceToEarningsRatio</remote-alias>
+            <ordinal>33</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[company!time!series_F2A02A6FEF584C0185A0488C86DCE2CA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>priceToBookRatio</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[priceToBookRatio]</local-name>
+            <parent-name>[company_time_series]</parent-name>
+            <remote-alias>priceToBookRatio</remote-alias>
+            <ordinal>34</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[company!time!series_F2A02A6FEF584C0185A0488C86DCE2CA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>currentRatio</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[currentRatio (company!time!series)]</local-name>
+            <parent-name>[company_time_series]</parent-name>
+            <remote-alias>currentRatio</remote-alias>
+            <ordinal>35</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[company!time!series_F2A02A6FEF584C0185A0488C86DCE2CA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>debtToEquityRatio</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[debtToEquityRatio (company!time!series)]</local-name>
+            <parent-name>[company_time_series]</parent-name>
+            <remote-alias>debtToEquityRatio</remote-alias>
+            <ordinal>36</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[company!time!series_F2A02A6FEF584C0185A0488C86DCE2CA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ebitdaMargin</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[ebitdaMargin]</local-name>
+            <parent-name>[company_time_series]</parent-name>
+            <remote-alias>ebitdaMargin</remote-alias>
+            <ordinal>37</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[company!time!series_F2A02A6FEF584C0185A0488C86DCE2CA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>bookValuePerShare</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[bookValuePerShare]</local-name>
+            <parent-name>[company_time_series]</parent-name>
+            <remote-alias>bookValuePerShare</remote-alias>
+            <ordinal>38</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[company!time!series_F2A02A6FEF584C0185A0488C86DCE2CA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>netIncomePerShare</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[netIncomePerShare]</local-name>
+            <parent-name>[company_time_series]</parent-name>
+            <remote-alias>netIncomePerShare</remote-alias>
+            <ordinal>39</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[company!time!series_F2A02A6FEF584C0185A0488C86DCE2CA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>shareholdersEquityPerShare</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[shareholdersEquityPerShare]</local-name>
+            <parent-name>[company_time_series]</parent-name>
+            <remote-alias>shareholdersEquityPerShare</remote-alias>
+            <ordinal>40</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[company!time!series_F2A02A6FEF584C0185A0488C86DCE2CA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>roe</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[roe (company!time!series)]</local-name>
+            <parent-name>[company_time_series]</parent-name>
+            <remote-alias>roe</remote-alias>
+            <ordinal>41</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[company!time!series_F2A02A6FEF584C0185A0488C86DCE2CA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>marketCap</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[marketCap (company!time!series)]</local-name>
+            <parent-name>[company_time_series]</parent-name>
+            <remote-alias>marketCap</remote-alias>
+            <ordinal>42</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[company!time!series_F2A02A6FEF584C0185A0488C86DCE2CA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>enterpriseValue</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[enterpriseValue (company!time!series)]</local-name>
+            <parent-name>[company_time_series]</parent-name>
+            <remote-alias>enterpriseValue</remote-alias>
+            <ordinal>43</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[company!time!series_F2A02A6FEF584C0185A0488C86DCE2CA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>freeCashFlowToFirm</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[freeCashFlowToFirm]</local-name>
+            <parent-name>[company_time_series]</parent-name>
+            <remote-alias>freeCashFlowToFirm</remote-alias>
+            <ordinal>44</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[company!time!series_F2A02A6FEF584C0185A0488C86DCE2CA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>freeCashFlowToEquity</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[freeCashFlowToEquity]</local-name>
+            <parent-name>[company_time_series]</parent-name>
+            <remote-alias>freeCashFlowToEquity</remote-alias>
+            <ordinal>45</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[company!time!series_F2A02A6FEF584C0185A0488C86DCE2CA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>returnOnAssets</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[returnOnAssets (company!time!series)]</local-name>
+            <parent-name>[company_time_series]</parent-name>
+            <remote-alias>returnOnAssets</remote-alias>
+            <ordinal>46</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[company!time!series_F2A02A6FEF584C0185A0488C86DCE2CA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>returnOnInvestedCapital</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[returnOnInvestedCapital (company!time!series)]</local-name>
+            <parent-name>[company_time_series]</parent-name>
+            <remote-alias>returnOnInvestedCapital</remote-alias>
+            <ordinal>47</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[company!time!series_F2A02A6FEF584C0185A0488C86DCE2CA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>returnOnEquity</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[returnOnEquity (company!time!series)]</local-name>
+            <parent-name>[company_time_series]</parent-name>
+            <remote-alias>returnOnEquity</remote-alias>
+            <ordinal>48</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[company!time!series_F2A02A6FEF584C0185A0488C86DCE2CA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>income_fiscalyear</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[income_fiscalyear]</local-name>
+            <parent-name>[company_time_series]</parent-name>
+            <remote-alias>income_fiscalyear</remote-alias>
+            <ordinal>49</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[company!time!series_F2A02A6FEF584C0185A0488C86DCE2CA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ratios_fiscalyear</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[ratios_fiscalyear]</local-name>
+            <parent-name>[company_time_series]</parent-name>
+            <remote-alias>ratios_fiscalyear</remote-alias>
+            <ordinal>50</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[company!time!series_F2A02A6FEF584C0185A0488C86DCE2CA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>keymetrics_fiscalyear</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[keymetrics_fiscalyear]</local-name>
+            <parent-name>[company_time_series]</parent-name>
+            <remote-alias>keymetrics_fiscalyear</remote-alias>
+            <ordinal>51</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[company!time!series_F2A02A6FEF584C0185A0488C86DCE2CA]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='blank' datatype='string' name='[Calculation_1643250916317769728]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='&quot;&quot;' />
+      </column>
+      <column caption='company_financial_summary' datatype='table' name='[__tableau_internal_object_id__].[company!financial!summary_E639979B5023451796994A9FB79DA15E]' role='measure' type='quantitative' />
+      <column caption='company_time_series' datatype='table' name='[__tableau_internal_object_id__].[company!time!series_F2A02A6FEF584C0185A0488C86DCE2CA]' role='measure' type='quantitative' />
+      <column caption='Book Value Per Share' datatype='real' name='[bookValuePerShare]' role='measure' type='quantitative' />
+      <column caption='CEO' datatype='string' name='[ceo]' role='dimension' type='nominal' />
+      <column caption='Change Percentage' datatype='real' name='[changePercentage]' role='measure' type='quantitative' />
+      <column caption='City' datatype='string' name='[city]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+      <column caption='Company Name' datatype='string' name='[companyName]' role='dimension' type='nominal' />
+      <column caption='Current Ratio' datatype='real' name='[currentRatio]' role='measure' type='quantitative' />
+      <column caption='Date' datatype='date' name='[date]' role='dimension' type='ordinal' />
+      <column caption='Debt To Equity Ratio' datatype='real' name='[debtToEquityRatio]' role='measure' type='quantitative' />
+      <column caption='Ebitda Margin' datatype='real' name='[ebitdaMargin]' role='measure' type='quantitative' />
+      <column caption='Ebitda' datatype='integer' name='[ebitda]' role='measure' type='quantitative' />
+      <column caption='Enterprise Value' datatype='integer' name='[enterpriseValue]' role='measure' type='quantitative' />
+      <column caption='Eps (Company!Time!Series)' datatype='real' name='[eps (company!time!series)]' role='measure' type='quantitative' />
+      <column caption='EPS' datatype='real' name='[eps]' role='measure' type='quantitative' />
+      <column caption='Financial Date' datatype='date' name='[financial_date]' role='dimension' type='ordinal' />
+      <column caption='Free Cash Flow To Equity' datatype='integer' name='[freeCashFlowToEquity]' role='measure' type='quantitative' />
+      <column caption='Free Cash Flow To Firm' datatype='real' name='[freeCashFlowToFirm]' role='measure' type='quantitative' />
+      <column caption='Free Cash Flow Yield' datatype='real' name='[freeCashFlowYield]' role='measure' type='quantitative' />
+      <column caption='Income Fiscalyear' datatype='integer' name='[income_fiscalyear]' role='measure' type='quantitative' />
+      <column caption='Industry' datatype='string' name='[industry]' role='dimension' type='nominal' />
+      <column caption='IPO Date' datatype='date' name='[ipoDate]' role='dimension' type='ordinal' />
+      <column caption='Keymetrics Fiscalyear' datatype='integer' name='[keymetrics_fiscalyear]' role='measure' type='quantitative' />
+      <column caption='Last Dividend' datatype='real' name='[lastDividend]' role='measure' type='quantitative' />
+      <column caption='Market Cap' datatype='integer' name='[marketCap]' role='measure' type='quantitative' />
+      <column caption='Net Income Per Share' datatype='real' name='[netIncomePerShare]' role='measure' type='quantitative' />
+      <column caption='Net Income' datatype='integer' name='[netIncome]' role='measure' type='quantitative' />
+      <column caption='Operating Income' datatype='integer' name='[operatingIncome]' role='measure' type='quantitative' />
+      <column caption='Pe Ratio' datatype='real' name='[pe_ratio]' role='measure' type='quantitative' />
+      <column caption='Price To Book Ratio' datatype='real' name='[priceToBookRatio]' role='measure' type='quantitative' />
+      <column caption='Price To Earnings Ratio' datatype='real' name='[priceToEarningsRatio]' role='measure' type='quantitative' />
+      <column caption='Price' datatype='real' name='[price]' role='measure' type='quantitative' />
+      <column caption='Ratios Fiscalyear' datatype='integer' name='[ratios_fiscalyear]' role='measure' type='quantitative' />
+      <column caption='Return On Assets' datatype='real' name='[returnOnAssets]' role='measure' type='quantitative' />
+      <column caption='Return On Equity' datatype='real' name='[returnOnEquity]' role='measure' type='quantitative' />
+      <column caption='Return On Invested Capital' datatype='real' name='[returnOnInvestedCapital]' role='measure' type='quantitative' />
+      <column caption='Revenue (Company!Time!Series)' datatype='integer' name='[revenue (company!time!series)]' role='measure' type='quantitative' />
+      <column caption='Revenue' datatype='integer' name='[revenue]' role='measure' type='quantitative' />
+      <column caption='Roe (Company!Time!Series)' datatype='real' name='[roe (company!time!series)]' role='measure' type='quantitative' />
+      <column caption='ROE' datatype='real' name='[roe]' role='measure' type='quantitative' />
+      <column caption='Sector' datatype='string' name='[sector]' role='dimension' type='nominal' />
+      <column caption='Shareholders Equity Per Share' datatype='real' name='[shareholdersEquityPerShare]' role='measure' type='quantitative' />
+      <column caption='State' datatype='string' name='[state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column caption='Symbol (Company!Time!Series)' datatype='string' name='[symbol (company!time!series)]' role='dimension' type='nominal' />
+      <column caption='Symbol' datatype='string' name='[symbol]' role='dimension' type='nominal' />
+      <column caption='Website' datatype='string' name='[website]' role='dimension' type='nominal' />
+      <drill-paths>
+        <drill-path name='state, city'>
+          <field>[state]</field>
+          <field>[city]</field>
+        </drill-path>
+      </drill-paths>
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='/var/folders/8z/mm89fw8n26351gwxbs4kj57r0000gn/T/tableau-temp/#TableauTemp_1us51ez1aq69u81734uk31quc00d.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='11/03/2025 10:08:14 AM' username='tableau_internal_user'>
+          <relation type='collection'>
+            <relation name='company!financial!summary_E639979B5023451796994A9FB79DA15E' table='[Extract].[company!financial!summary_E639979B5023451796994A9FB79DA15E]' type='table' />
+            <relation name='company!time!series_F2A02A6FEF584C0185A0488C86DCE2CA' table='[Extract].[company!time!series_F2A02A6FEF584C0185A0488C86DCE2CA]' type='table' />
+          </relation>
+          <cols>
+            <map key='[bookValuePerShare]' value='[company!time!series_F2A02A6FEF584C0185A0488C86DCE2CA].[bookValuePerShare]' />
+            <map key='[ceo]' value='[company!financial!summary_E639979B5023451796994A9FB79DA15E].[ceo]' />
+            <map key='[changePercentage]' value='[company!financial!summary_E639979B5023451796994A9FB79DA15E].[changePercentage]' />
+            <map key='[city]' value='[company!financial!summary_E639979B5023451796994A9FB79DA15E].[city]' />
+            <map key='[companyName]' value='[company!financial!summary_E639979B5023451796994A9FB79DA15E].[companyName]' />
+            <map key='[currentRatio (company!time!series)]' value='[company!time!series_F2A02A6FEF584C0185A0488C86DCE2CA].[currentRatio]' />
+            <map key='[currentRatio]' value='[company!financial!summary_E639979B5023451796994A9FB79DA15E].[currentRatio]' />
+            <map key='[date]' value='[company!time!series_F2A02A6FEF584C0185A0488C86DCE2CA].[date]' />
+            <map key='[debtToEquityRatio (company!time!series)]' value='[company!time!series_F2A02A6FEF584C0185A0488C86DCE2CA].[debtToEquityRatio]' />
+            <map key='[debtToEquityRatio]' value='[company!financial!summary_E639979B5023451796994A9FB79DA15E].[debtToEquityRatio]' />
+            <map key='[ebitdaMargin]' value='[company!time!series_F2A02A6FEF584C0185A0488C86DCE2CA].[ebitdaMargin]' />
+            <map key='[ebitda]' value='[company!time!series_F2A02A6FEF584C0185A0488C86DCE2CA].[ebitda]' />
+            <map key='[enterpriseValue (company!time!series)]' value='[company!time!series_F2A02A6FEF584C0185A0488C86DCE2CA].[enterpriseValue]' />
+            <map key='[enterpriseValue]' value='[company!financial!summary_E639979B5023451796994A9FB79DA15E].[enterpriseValue]' />
+            <map key='[eps (company!time!series)]' value='[company!time!series_F2A02A6FEF584C0185A0488C86DCE2CA].[eps]' />
+            <map key='[eps]' value='[company!financial!summary_E639979B5023451796994A9FB79DA15E].[eps]' />
+            <map key='[financial_date]' value='[company!financial!summary_E639979B5023451796994A9FB79DA15E].[financial_date]' />
+            <map key='[freeCashFlowToEquity]' value='[company!time!series_F2A02A6FEF584C0185A0488C86DCE2CA].[freeCashFlowToEquity]' />
+            <map key='[freeCashFlowToFirm]' value='[company!time!series_F2A02A6FEF584C0185A0488C86DCE2CA].[freeCashFlowToFirm]' />
+            <map key='[freeCashFlowYield]' value='[company!financial!summary_E639979B5023451796994A9FB79DA15E].[freeCashFlowYield]' />
+            <map key='[income_fiscalyear]' value='[company!time!series_F2A02A6FEF584C0185A0488C86DCE2CA].[income_fiscalyear]' />
+            <map key='[industry]' value='[company!financial!summary_E639979B5023451796994A9FB79DA15E].[industry]' />
+            <map key='[ipoDate]' value='[company!financial!summary_E639979B5023451796994A9FB79DA15E].[ipoDate]' />
+            <map key='[keymetrics_fiscalyear]' value='[company!time!series_F2A02A6FEF584C0185A0488C86DCE2CA].[keymetrics_fiscalyear]' />
+            <map key='[lastDividend]' value='[company!financial!summary_E639979B5023451796994A9FB79DA15E].[lastDividend]' />
+            <map key='[marketCap (company!time!series)]' value='[company!time!series_F2A02A6FEF584C0185A0488C86DCE2CA].[marketCap]' />
+            <map key='[marketCap]' value='[company!financial!summary_E639979B5023451796994A9FB79DA15E].[marketCap]' />
+            <map key='[netIncome (company!time!series)]' value='[company!time!series_F2A02A6FEF584C0185A0488C86DCE2CA].[netIncome]' />
+            <map key='[netIncomePerShare]' value='[company!time!series_F2A02A6FEF584C0185A0488C86DCE2CA].[netIncomePerShare]' />
+            <map key='[netIncome]' value='[company!financial!summary_E639979B5023451796994A9FB79DA15E].[netIncome]' />
+            <map key='[operatingIncome]' value='[company!time!series_F2A02A6FEF584C0185A0488C86DCE2CA].[operatingIncome]' />
+            <map key='[pe_ratio]' value='[company!financial!summary_E639979B5023451796994A9FB79DA15E].[pe_ratio]' />
+            <map key='[priceToBookRatio]' value='[company!time!series_F2A02A6FEF584C0185A0488C86DCE2CA].[priceToBookRatio]' />
+            <map key='[priceToEarningsRatio]' value='[company!time!series_F2A02A6FEF584C0185A0488C86DCE2CA].[priceToEarningsRatio]' />
+            <map key='[price]' value='[company!financial!summary_E639979B5023451796994A9FB79DA15E].[price]' />
+            <map key='[ratios_fiscalyear]' value='[company!time!series_F2A02A6FEF584C0185A0488C86DCE2CA].[ratios_fiscalyear]' />
+            <map key='[returnOnAssets (company!time!series)]' value='[company!time!series_F2A02A6FEF584C0185A0488C86DCE2CA].[returnOnAssets]' />
+            <map key='[returnOnAssets]' value='[company!financial!summary_E639979B5023451796994A9FB79DA15E].[returnOnAssets]' />
+            <map key='[returnOnEquity (company!time!series)]' value='[company!time!series_F2A02A6FEF584C0185A0488C86DCE2CA].[returnOnEquity]' />
+            <map key='[returnOnEquity]' value='[company!financial!summary_E639979B5023451796994A9FB79DA15E].[returnOnEquity]' />
+            <map key='[returnOnInvestedCapital (company!time!series)]' value='[company!time!series_F2A02A6FEF584C0185A0488C86DCE2CA].[returnOnInvestedCapital]' />
+            <map key='[returnOnInvestedCapital]' value='[company!financial!summary_E639979B5023451796994A9FB79DA15E].[returnOnInvestedCapital]' />
+            <map key='[revenue (company!time!series)]' value='[company!time!series_F2A02A6FEF584C0185A0488C86DCE2CA].[revenue]' />
+            <map key='[revenue]' value='[company!financial!summary_E639979B5023451796994A9FB79DA15E].[revenue]' />
+            <map key='[roe (company!time!series)]' value='[company!time!series_F2A02A6FEF584C0185A0488C86DCE2CA].[roe]' />
+            <map key='[roe]' value='[company!financial!summary_E639979B5023451796994A9FB79DA15E].[roe]' />
+            <map key='[sector]' value='[company!financial!summary_E639979B5023451796994A9FB79DA15E].[sector]' />
+            <map key='[shareholdersEquityPerShare]' value='[company!time!series_F2A02A6FEF584C0185A0488C86DCE2CA].[shareholdersEquityPerShare]' />
+            <map key='[state]' value='[company!financial!summary_E639979B5023451796994A9FB79DA15E].[state]' />
+            <map key='[symbol (company!time!series)]' value='[company!time!series_F2A02A6FEF584C0185A0488C86DCE2CA].[symbol]' />
+            <map key='[symbol]' value='[company!financial!summary_E639979B5023451796994A9FB79DA15E].[symbol]' />
+            <map key='[website]' value='[company!financial!summary_E639979B5023451796994A9FB79DA15E].[website]' />
+          </cols>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>symbol</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[symbol]</local-name>
+              <parent-name>[company!financial!summary_E639979B5023451796994A9FB79DA15E]</parent-name>
+              <remote-alias>symbol</remote-alias>
+              <ordinal>0</ordinal>
+              <family>company_financial_summary</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RPH_S2' />
+              <object-id>[company!financial!summary_E639979B5023451796994A9FB79DA15E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>companyName</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[companyName]</local-name>
+              <parent-name>[company!financial!summary_E639979B5023451796994A9FB79DA15E]</parent-name>
+              <remote-alias>companyName</remote-alias>
+              <ordinal>1</ordinal>
+              <family>company_financial_summary</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RPH_S2' />
+              <object-id>[company!financial!summary_E639979B5023451796994A9FB79DA15E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>sector</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[sector]</local-name>
+              <parent-name>[company!financial!summary_E639979B5023451796994A9FB79DA15E]</parent-name>
+              <remote-alias>sector</remote-alias>
+              <ordinal>2</ordinal>
+              <family>company_financial_summary</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RPH_S2' />
+              <object-id>[company!financial!summary_E639979B5023451796994A9FB79DA15E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>industry</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[industry]</local-name>
+              <parent-name>[company!financial!summary_E639979B5023451796994A9FB79DA15E]</parent-name>
+              <remote-alias>industry</remote-alias>
+              <ordinal>3</ordinal>
+              <family>company_financial_summary</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RPH_S2' />
+              <object-id>[company!financial!summary_E639979B5023451796994A9FB79DA15E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>ceo</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[ceo]</local-name>
+              <parent-name>[company!financial!summary_E639979B5023451796994A9FB79DA15E]</parent-name>
+              <remote-alias>ceo</remote-alias>
+              <ordinal>4</ordinal>
+              <family>company_financial_summary</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RPH_S2' />
+              <object-id>[company!financial!summary_E639979B5023451796994A9FB79DA15E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>city</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[city]</local-name>
+              <parent-name>[company!financial!summary_E639979B5023451796994A9FB79DA15E]</parent-name>
+              <remote-alias>city</remote-alias>
+              <ordinal>5</ordinal>
+              <family>company_financial_summary</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RPH_S2' />
+              <object-id>[company!financial!summary_E639979B5023451796994A9FB79DA15E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>state</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[state]</local-name>
+              <parent-name>[company!financial!summary_E639979B5023451796994A9FB79DA15E]</parent-name>
+              <remote-alias>state</remote-alias>
+              <ordinal>6</ordinal>
+              <family>company_financial_summary</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RPH_S2' />
+              <object-id>[company!financial!summary_E639979B5023451796994A9FB79DA15E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>ipoDate</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[ipoDate]</local-name>
+              <parent-name>[company!financial!summary_E639979B5023451796994A9FB79DA15E]</parent-name>
+              <remote-alias>ipoDate</remote-alias>
+              <ordinal>7</ordinal>
+              <family>company_financial_summary</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[company!financial!summary_E639979B5023451796994A9FB79DA15E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>lastDividend</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[lastDividend]</local-name>
+              <parent-name>[company!financial!summary_E639979B5023451796994A9FB79DA15E]</parent-name>
+              <remote-alias>lastDividend</remote-alias>
+              <ordinal>8</ordinal>
+              <family>company_financial_summary</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[company!financial!summary_E639979B5023451796994A9FB79DA15E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>website</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[website]</local-name>
+              <parent-name>[company!financial!summary_E639979B5023451796994A9FB79DA15E]</parent-name>
+              <remote-alias>website</remote-alias>
+              <ordinal>9</ordinal>
+              <family>company_financial_summary</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RPH_S2' />
+              <object-id>[company!financial!summary_E639979B5023451796994A9FB79DA15E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>price</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[price]</local-name>
+              <parent-name>[company!financial!summary_E639979B5023451796994A9FB79DA15E]</parent-name>
+              <remote-alias>price</remote-alias>
+              <ordinal>10</ordinal>
+              <family>company_financial_summary</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[company!financial!summary_E639979B5023451796994A9FB79DA15E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>marketCap</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[marketCap]</local-name>
+              <parent-name>[company!financial!summary_E639979B5023451796994A9FB79DA15E]</parent-name>
+              <remote-alias>marketCap</remote-alias>
+              <ordinal>11</ordinal>
+              <family>company_financial_summary</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[company!financial!summary_E639979B5023451796994A9FB79DA15E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>changePercentage</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[changePercentage]</local-name>
+              <parent-name>[company!financial!summary_E639979B5023451796994A9FB79DA15E]</parent-name>
+              <remote-alias>changePercentage</remote-alias>
+              <ordinal>12</ordinal>
+              <family>company_financial_summary</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[company!financial!summary_E639979B5023451796994A9FB79DA15E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>financial_date</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[financial_date]</local-name>
+              <parent-name>[company!financial!summary_E639979B5023451796994A9FB79DA15E]</parent-name>
+              <remote-alias>financial_date</remote-alias>
+              <ordinal>13</ordinal>
+              <family>company_financial_summary</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[company!financial!summary_E639979B5023451796994A9FB79DA15E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>revenue</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[revenue]</local-name>
+              <parent-name>[company!financial!summary_E639979B5023451796994A9FB79DA15E]</parent-name>
+              <remote-alias>revenue</remote-alias>
+              <ordinal>14</ordinal>
+              <family>company_financial_summary</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[company!financial!summary_E639979B5023451796994A9FB79DA15E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>netIncome</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[netIncome]</local-name>
+              <parent-name>[company!financial!summary_E639979B5023451796994A9FB79DA15E]</parent-name>
+              <remote-alias>netIncome</remote-alias>
+              <ordinal>15</ordinal>
+              <family>company_financial_summary</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[company!financial!summary_E639979B5023451796994A9FB79DA15E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>eps</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[eps]</local-name>
+              <parent-name>[company!financial!summary_E639979B5023451796994A9FB79DA15E]</parent-name>
+              <remote-alias>eps</remote-alias>
+              <ordinal>16</ordinal>
+              <family>company_financial_summary</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[company!financial!summary_E639979B5023451796994A9FB79DA15E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>pe_ratio</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[pe_ratio]</local-name>
+              <parent-name>[company!financial!summary_E639979B5023451796994A9FB79DA15E]</parent-name>
+              <remote-alias>pe_ratio</remote-alias>
+              <ordinal>17</ordinal>
+              <family>company_financial_summary</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[company!financial!summary_E639979B5023451796994A9FB79DA15E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>roe</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[roe]</local-name>
+              <parent-name>[company!financial!summary_E639979B5023451796994A9FB79DA15E]</parent-name>
+              <remote-alias>roe</remote-alias>
+              <ordinal>18</ordinal>
+              <family>company_financial_summary</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[company!financial!summary_E639979B5023451796994A9FB79DA15E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>currentRatio</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[currentRatio]</local-name>
+              <parent-name>[company!financial!summary_E639979B5023451796994A9FB79DA15E]</parent-name>
+              <remote-alias>currentRatio</remote-alias>
+              <ordinal>19</ordinal>
+              <family>company_financial_summary</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[company!financial!summary_E639979B5023451796994A9FB79DA15E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>debtToEquityRatio</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[debtToEquityRatio]</local-name>
+              <parent-name>[company!financial!summary_E639979B5023451796994A9FB79DA15E]</parent-name>
+              <remote-alias>debtToEquityRatio</remote-alias>
+              <ordinal>20</ordinal>
+              <family>company_financial_summary</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[company!financial!summary_E639979B5023451796994A9FB79DA15E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>returnOnAssets</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[returnOnAssets]</local-name>
+              <parent-name>[company!financial!summary_E639979B5023451796994A9FB79DA15E]</parent-name>
+              <remote-alias>returnOnAssets</remote-alias>
+              <ordinal>21</ordinal>
+              <family>company_financial_summary</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[company!financial!summary_E639979B5023451796994A9FB79DA15E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>returnOnInvestedCapital</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[returnOnInvestedCapital]</local-name>
+              <parent-name>[company!financial!summary_E639979B5023451796994A9FB79DA15E]</parent-name>
+              <remote-alias>returnOnInvestedCapital</remote-alias>
+              <ordinal>22</ordinal>
+              <family>company_financial_summary</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[company!financial!summary_E639979B5023451796994A9FB79DA15E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>returnOnEquity</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[returnOnEquity]</local-name>
+              <parent-name>[company!financial!summary_E639979B5023451796994A9FB79DA15E]</parent-name>
+              <remote-alias>returnOnEquity</remote-alias>
+              <ordinal>23</ordinal>
+              <family>company_financial_summary</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[company!financial!summary_E639979B5023451796994A9FB79DA15E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>freeCashFlowYield</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[freeCashFlowYield]</local-name>
+              <parent-name>[company!financial!summary_E639979B5023451796994A9FB79DA15E]</parent-name>
+              <remote-alias>freeCashFlowYield</remote-alias>
+              <ordinal>24</ordinal>
+              <family>company_financial_summary</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[company!financial!summary_E639979B5023451796994A9FB79DA15E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>enterpriseValue</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[enterpriseValue]</local-name>
+              <parent-name>[company!financial!summary_E639979B5023451796994A9FB79DA15E]</parent-name>
+              <remote-alias>enterpriseValue</remote-alias>
+              <ordinal>25</ordinal>
+              <family>company_financial_summary</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[company!financial!summary_E639979B5023451796994A9FB79DA15E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>symbol</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[symbol (company!time!series)]</local-name>
+              <parent-name>[company!time!series_F2A02A6FEF584C0185A0488C86DCE2CA]</parent-name>
+              <remote-alias>symbol</remote-alias>
+              <ordinal>26</ordinal>
+              <family>company_time_series</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RPH_S2' />
+              <object-id>[company!time!series_F2A02A6FEF584C0185A0488C86DCE2CA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>date</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[date]</local-name>
+              <parent-name>[company!time!series_F2A02A6FEF584C0185A0488C86DCE2CA]</parent-name>
+              <remote-alias>date</remote-alias>
+              <ordinal>27</ordinal>
+              <family>company_time_series</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>24</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[company!time!series_F2A02A6FEF584C0185A0488C86DCE2CA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>revenue</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[revenue (company!time!series)]</local-name>
+              <parent-name>[company!time!series_F2A02A6FEF584C0185A0488C86DCE2CA]</parent-name>
+              <remote-alias>revenue</remote-alias>
+              <ordinal>28</ordinal>
+              <family>company_time_series</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>26</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[company!time!series_F2A02A6FEF584C0185A0488C86DCE2CA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>netIncome</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[netIncome (company!time!series)]</local-name>
+              <parent-name>[company!time!series_F2A02A6FEF584C0185A0488C86DCE2CA]</parent-name>
+              <remote-alias>netIncome</remote-alias>
+              <ordinal>29</ordinal>
+              <family>company_time_series</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>26</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[company!time!series_F2A02A6FEF584C0185A0488C86DCE2CA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>eps</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[eps (company!time!series)]</local-name>
+              <parent-name>[company!time!series_F2A02A6FEF584C0185A0488C86DCE2CA]</parent-name>
+              <remote-alias>eps</remote-alias>
+              <ordinal>30</ordinal>
+              <family>company_time_series</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>25</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[company!time!series_F2A02A6FEF584C0185A0488C86DCE2CA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>operatingIncome</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[operatingIncome]</local-name>
+              <parent-name>[company!time!series_F2A02A6FEF584C0185A0488C86DCE2CA]</parent-name>
+              <remote-alias>operatingIncome</remote-alias>
+              <ordinal>31</ordinal>
+              <family>company_time_series</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>26</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[company!time!series_F2A02A6FEF584C0185A0488C86DCE2CA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>ebitda</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[ebitda]</local-name>
+              <parent-name>[company!time!series_F2A02A6FEF584C0185A0488C86DCE2CA]</parent-name>
+              <remote-alias>ebitda</remote-alias>
+              <ordinal>32</ordinal>
+              <family>company_time_series</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>26</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[company!time!series_F2A02A6FEF584C0185A0488C86DCE2CA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>priceToEarningsRatio</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[priceToEarningsRatio]</local-name>
+              <parent-name>[company!time!series_F2A02A6FEF584C0185A0488C86DCE2CA]</parent-name>
+              <remote-alias>priceToEarningsRatio</remote-alias>
+              <ordinal>33</ordinal>
+              <family>company_time_series</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>26</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[company!time!series_F2A02A6FEF584C0185A0488C86DCE2CA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>priceToBookRatio</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[priceToBookRatio]</local-name>
+              <parent-name>[company!time!series_F2A02A6FEF584C0185A0488C86DCE2CA]</parent-name>
+              <remote-alias>priceToBookRatio</remote-alias>
+              <ordinal>34</ordinal>
+              <family>company_time_series</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>26</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[company!time!series_F2A02A6FEF584C0185A0488C86DCE2CA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>currentRatio</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[currentRatio (company!time!series)]</local-name>
+              <parent-name>[company!time!series_F2A02A6FEF584C0185A0488C86DCE2CA]</parent-name>
+              <remote-alias>currentRatio</remote-alias>
+              <ordinal>35</ordinal>
+              <family>company_time_series</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>26</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[company!time!series_F2A02A6FEF584C0185A0488C86DCE2CA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>debtToEquityRatio</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[debtToEquityRatio (company!time!series)]</local-name>
+              <parent-name>[company!time!series_F2A02A6FEF584C0185A0488C86DCE2CA]</parent-name>
+              <remote-alias>debtToEquityRatio</remote-alias>
+              <ordinal>36</ordinal>
+              <family>company_time_series</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>26</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[company!time!series_F2A02A6FEF584C0185A0488C86DCE2CA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>ebitdaMargin</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[ebitdaMargin]</local-name>
+              <parent-name>[company!time!series_F2A02A6FEF584C0185A0488C86DCE2CA]</parent-name>
+              <remote-alias>ebitdaMargin</remote-alias>
+              <ordinal>37</ordinal>
+              <family>company_time_series</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>26</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[company!time!series_F2A02A6FEF584C0185A0488C86DCE2CA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>bookValuePerShare</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[bookValuePerShare]</local-name>
+              <parent-name>[company!time!series_F2A02A6FEF584C0185A0488C86DCE2CA]</parent-name>
+              <remote-alias>bookValuePerShare</remote-alias>
+              <ordinal>38</ordinal>
+              <family>company_time_series</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>26</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[company!time!series_F2A02A6FEF584C0185A0488C86DCE2CA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>netIncomePerShare</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[netIncomePerShare]</local-name>
+              <parent-name>[company!time!series_F2A02A6FEF584C0185A0488C86DCE2CA]</parent-name>
+              <remote-alias>netIncomePerShare</remote-alias>
+              <ordinal>39</ordinal>
+              <family>company_time_series</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>26</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[company!time!series_F2A02A6FEF584C0185A0488C86DCE2CA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>shareholdersEquityPerShare</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[shareholdersEquityPerShare]</local-name>
+              <parent-name>[company!time!series_F2A02A6FEF584C0185A0488C86DCE2CA]</parent-name>
+              <remote-alias>shareholdersEquityPerShare</remote-alias>
+              <ordinal>40</ordinal>
+              <family>company_time_series</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>26</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[company!time!series_F2A02A6FEF584C0185A0488C86DCE2CA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>roe</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[roe (company!time!series)]</local-name>
+              <parent-name>[company!time!series_F2A02A6FEF584C0185A0488C86DCE2CA]</parent-name>
+              <remote-alias>roe</remote-alias>
+              <ordinal>41</ordinal>
+              <family>company_time_series</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>26</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[company!time!series_F2A02A6FEF584C0185A0488C86DCE2CA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>marketCap</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[marketCap (company!time!series)]</local-name>
+              <parent-name>[company!time!series_F2A02A6FEF584C0185A0488C86DCE2CA]</parent-name>
+              <remote-alias>marketCap</remote-alias>
+              <ordinal>42</ordinal>
+              <family>company_time_series</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>26</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[company!time!series_F2A02A6FEF584C0185A0488C86DCE2CA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>enterpriseValue</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[enterpriseValue (company!time!series)]</local-name>
+              <parent-name>[company!time!series_F2A02A6FEF584C0185A0488C86DCE2CA]</parent-name>
+              <remote-alias>enterpriseValue</remote-alias>
+              <ordinal>43</ordinal>
+              <family>company_time_series</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>26</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[company!time!series_F2A02A6FEF584C0185A0488C86DCE2CA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>freeCashFlowToFirm</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[freeCashFlowToFirm]</local-name>
+              <parent-name>[company!time!series_F2A02A6FEF584C0185A0488C86DCE2CA]</parent-name>
+              <remote-alias>freeCashFlowToFirm</remote-alias>
+              <ordinal>44</ordinal>
+              <family>company_time_series</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>26</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[company!time!series_F2A02A6FEF584C0185A0488C86DCE2CA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>freeCashFlowToEquity</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[freeCashFlowToEquity]</local-name>
+              <parent-name>[company!time!series_F2A02A6FEF584C0185A0488C86DCE2CA]</parent-name>
+              <remote-alias>freeCashFlowToEquity</remote-alias>
+              <ordinal>45</ordinal>
+              <family>company_time_series</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>26</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[company!time!series_F2A02A6FEF584C0185A0488C86DCE2CA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>returnOnAssets</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[returnOnAssets (company!time!series)]</local-name>
+              <parent-name>[company!time!series_F2A02A6FEF584C0185A0488C86DCE2CA]</parent-name>
+              <remote-alias>returnOnAssets</remote-alias>
+              <ordinal>46</ordinal>
+              <family>company_time_series</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>26</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[company!time!series_F2A02A6FEF584C0185A0488C86DCE2CA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>returnOnInvestedCapital</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[returnOnInvestedCapital (company!time!series)]</local-name>
+              <parent-name>[company!time!series_F2A02A6FEF584C0185A0488C86DCE2CA]</parent-name>
+              <remote-alias>returnOnInvestedCapital</remote-alias>
+              <ordinal>47</ordinal>
+              <family>company_time_series</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>26</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[company!time!series_F2A02A6FEF584C0185A0488C86DCE2CA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>returnOnEquity</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[returnOnEquity (company!time!series)]</local-name>
+              <parent-name>[company!time!series_F2A02A6FEF584C0185A0488C86DCE2CA]</parent-name>
+              <remote-alias>returnOnEquity</remote-alias>
+              <ordinal>48</ordinal>
+              <family>company_time_series</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>26</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[company!time!series_F2A02A6FEF584C0185A0488C86DCE2CA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>income_fiscalyear</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[income_fiscalyear]</local-name>
+              <parent-name>[company!time!series_F2A02A6FEF584C0185A0488C86DCE2CA]</parent-name>
+              <remote-alias>income_fiscalyear</remote-alias>
+              <ordinal>49</ordinal>
+              <family>company_time_series</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[company!time!series_F2A02A6FEF584C0185A0488C86DCE2CA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>ratios_fiscalyear</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[ratios_fiscalyear]</local-name>
+              <parent-name>[company!time!series_F2A02A6FEF584C0185A0488C86DCE2CA]</parent-name>
+              <remote-alias>ratios_fiscalyear</remote-alias>
+              <ordinal>50</ordinal>
+              <family>company_time_series</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[company!time!series_F2A02A6FEF584C0185A0488C86DCE2CA]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>keymetrics_fiscalyear</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[keymetrics_fiscalyear]</local-name>
+              <parent-name>[company!time!series_F2A02A6FEF584C0185A0488C86DCE2CA]</parent-name>
+              <remote-alias>keymetrics_fiscalyear</remote-alias>
+              <ordinal>51</ordinal>
+              <family>company_time_series</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[company!time!series_F2A02A6FEF584C0185A0488C86DCE2CA]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Philippines&quot;' />
+      </semantic-values>
+      <field-sort-info field-sort-order-type='custom-order'>
+        <field-sort-custom-order field='symbol' />
+        <field-sort-custom-order field='companyName' />
+        <field-sort-custom-order field='sector' />
+        <field-sort-custom-order field='industry' />
+        <field-sort-custom-order field='ceo' />
+        <field-sort-custom-order field='city' />
+        <field-sort-custom-order field='state' />
+        <field-sort-custom-order field='ipoDate' />
+        <field-sort-custom-order field='lastDividend' />
+        <field-sort-custom-order field='website' />
+        <field-sort-custom-order field='price' />
+        <field-sort-custom-order field='marketCap' />
+        <field-sort-custom-order field='changePercentage' />
+        <field-sort-custom-order field='financial_date' />
+        <field-sort-custom-order field='revenue' />
+        <field-sort-custom-order field='netIncome' />
+        <field-sort-custom-order field='eps' />
+        <field-sort-custom-order field='pe_ratio' />
+        <field-sort-custom-order field='roe' />
+        <field-sort-custom-order field='currentRatio' />
+        <field-sort-custom-order field='debtToEquityRatio' />
+        <field-sort-custom-order field='returnOnAssets' />
+        <field-sort-custom-order field='returnOnInvestedCapital' />
+        <field-sort-custom-order field='returnOnEquity' />
+        <field-sort-custom-order field='freeCashFlowYield' />
+        <field-sort-custom-order field='enterpriseValue' />
+      </field-sort-info>
+      <object-graph>
+        <objects>
+          <object caption='company_financial_summary' id='company!financial!summary_E639979B5023451796994A9FB79DA15E'>
+            <properties context=''>
+              <relation connection='cloudfile:googledrive-excel-direct.0ophkrw17drhot11b8wdl1sju3cv' name='company_financial_summary' table='[company_financial_summary$]' type='table'>
+                <columns gridOrigin='A1:Z6:no:A1:Z6:0' header='yes' outcome='6'>
+                  <column datatype='string' name='symbol' ordinal='0' />
+                  <column datatype='string' name='companyName' ordinal='1' />
+                  <column datatype='string' name='sector' ordinal='2' />
+                  <column datatype='string' name='industry' ordinal='3' />
+                  <column datatype='string' name='ceo' ordinal='4' />
+                  <column datatype='string' name='city' ordinal='5' />
+                  <column datatype='string' name='state' ordinal='6' />
+                  <column datatype='date' name='ipoDate' ordinal='7' />
+                  <column datatype='real' name='lastDividend' ordinal='8' />
+                  <column datatype='string' name='website' ordinal='9' />
+                  <column datatype='real' name='price' ordinal='10' />
+                  <column datatype='integer' name='marketCap' ordinal='11' />
+                  <column datatype='real' name='changePercentage' ordinal='12' />
+                  <column datatype='date' name='financial_date' ordinal='13' />
+                  <column datatype='integer' name='revenue' ordinal='14' />
+                  <column datatype='integer' name='netIncome' ordinal='15' />
+                  <column datatype='real' name='eps' ordinal='16' />
+                  <column datatype='real' name='pe_ratio' ordinal='17' />
+                  <column datatype='real' name='roe' ordinal='18' />
+                  <column datatype='real' name='currentRatio' ordinal='19' />
+                  <column datatype='real' name='debtToEquityRatio' ordinal='20' />
+                  <column datatype='real' name='returnOnAssets' ordinal='21' />
+                  <column datatype='real' name='returnOnInvestedCapital' ordinal='22' />
+                  <column datatype='real' name='returnOnEquity' ordinal='23' />
+                  <column datatype='real' name='freeCashFlowYield' ordinal='24' />
+                  <column datatype='integer' name='enterpriseValue' ordinal='25' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='company!financial!summary_E639979B5023451796994A9FB79DA15E' table='[Extract].[company!financial!summary_E639979B5023451796994A9FB79DA15E]' type='table' />
+            </properties>
+          </object>
+          <object caption='company_time_series' id='company!time!series_F2A02A6FEF584C0185A0488C86DCE2CA'>
+            <properties context=''>
+              <relation connection='cloudfile:googledrive-excel-direct.0ophkrw17drhot11b8wdl1sju3cv' name='company_time_series' table='[company_time_series$]' type='table'>
+                <columns gridOrigin='A1:Z30:no:A1:Z30:0' header='yes' outcome='2'>
+                  <column datatype='string' name='symbol' ordinal='0' />
+                  <column datatype='date' name='date' ordinal='1' />
+                  <column datatype='integer' name='revenue' ordinal='2' />
+                  <column datatype='integer' name='netIncome' ordinal='3' />
+                  <column datatype='real' name='eps' ordinal='4' />
+                  <column datatype='integer' name='operatingIncome' ordinal='5' />
+                  <column datatype='integer' name='ebitda' ordinal='6' />
+                  <column datatype='real' name='priceToEarningsRatio' ordinal='7' />
+                  <column datatype='real' name='priceToBookRatio' ordinal='8' />
+                  <column datatype='real' name='currentRatio' ordinal='9' />
+                  <column datatype='real' name='debtToEquityRatio' ordinal='10' />
+                  <column datatype='real' name='ebitdaMargin' ordinal='11' />
+                  <column datatype='real' name='bookValuePerShare' ordinal='12' />
+                  <column datatype='real' name='netIncomePerShare' ordinal='13' />
+                  <column datatype='real' name='shareholdersEquityPerShare' ordinal='14' />
+                  <column datatype='real' name='roe' ordinal='15' />
+                  <column datatype='integer' name='marketCap' ordinal='16' />
+                  <column datatype='integer' name='enterpriseValue' ordinal='17' />
+                  <column datatype='real' name='freeCashFlowToFirm' ordinal='18' />
+                  <column datatype='integer' name='freeCashFlowToEquity' ordinal='19' />
+                  <column datatype='real' name='returnOnAssets' ordinal='20' />
+                  <column datatype='real' name='returnOnInvestedCapital' ordinal='21' />
+                  <column datatype='real' name='returnOnEquity' ordinal='22' />
+                  <column datatype='integer' name='income_fiscalyear' ordinal='23' />
+                  <column datatype='integer' name='ratios_fiscalyear' ordinal='24' />
+                  <column datatype='integer' name='keymetrics_fiscalyear' ordinal='25' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='company!time!series_F2A02A6FEF584C0185A0488C86DCE2CA' table='[Extract].[company!time!series_F2A02A6FEF584C0185A0488C86DCE2CA]' type='table' />
+            </properties>
+          </object>
+        </objects>
+        <relationships>
+          <relationship>
+            <expression op='='>
+              <expression op='[symbol]' />
+              <expression op='[symbol (company!time!series)]' />
+            </expression>
+            <first-end-point object-id='company!financial!summary_E639979B5023451796994A9FB79DA15E' />
+            <second-end-point object-id='company!time!series_F2A02A6FEF584C0185A0488C86DCE2CA' />
+          </relationship>
+        </relationships>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <shared-views>
+    <shared-view name='federated.00try8e0fmt8zm12xlzqd1jc8f7n'>
+      <datasources>
+        <datasource caption='company_financial_summary+ (FMP Report)' name='federated.00try8e0fmt8zm12xlzqd1jc8f7n' />
+      </datasources>
+      <datasource-dependencies datasource='federated.00try8e0fmt8zm12xlzqd1jc8f7n'>
+        <column caption='Company Name' datatype='string' name='[companyName]' role='dimension' type='nominal' />
+        <column-instance column='[companyName]' derivation='None' name='[none:companyName:nk]' pivot='key' type='nominal' />
+      </datasource-dependencies>
+      <filter class='categorical' column='[federated.00try8e0fmt8zm12xlzqd1jc8f7n].[none:companyName:nk]'>
+        <groupfilter function='member' level='[none:companyName:nk]' member='&quot;Apple Inc.&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+        <target field='[federated.00try8e0fmt8zm12xlzqd1jc8f7n].[none:companyName:nk]' />
+      </filter>
+    </shared-view>
+  </shared-views>
+  <worksheets>
+    <worksheet name='Company Details'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>&lt;</run>
+            <run>[federated.00try8e0fmt8zm12xlzqd1jc8f7n].[none:companyName:nk]</run>
+            <run>&gt;&#10;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='company_financial_summary+ (FMP Report)' name='federated.00try8e0fmt8zm12xlzqd1jc8f7n' />
+          </datasources>
+          <datasource-dependencies datasource='federated.00try8e0fmt8zm12xlzqd1jc8f7n'>
+            <column caption='blank' datatype='string' name='[Calculation_1643250916317769728]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='&quot;&quot;' />
+            </column>
+            <column caption='CEO' datatype='string' name='[ceo]' role='dimension' type='nominal' />
+            <column caption='Change Percentage' datatype='real' name='[changePercentage]' role='measure' type='quantitative' />
+            <column caption='Company Name' datatype='string' name='[companyName]' role='dimension' type='nominal' />
+            <column caption='Industry' datatype='string' name='[industry]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_1643250916317769728]' derivation='None' name='[none:Calculation_1643250916317769728:nk]' pivot='key' type='nominal' />
+            <column-instance column='[ceo]' derivation='None' name='[none:ceo:nk]' pivot='key' type='nominal' />
+            <column-instance column='[changePercentage]' derivation='None' name='[none:changePercentage:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[companyName]' derivation='None' name='[none:companyName:nk]' pivot='key' type='nominal' />
+            <column-instance column='[industry]' derivation='None' name='[none:industry:nk]' pivot='key' type='nominal' />
+            <column-instance column='[price]' derivation='None' name='[none:price:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[sector]' derivation='None' name='[none:sector:nk]' pivot='key' type='nominal' />
+            <column-instance column='[symbol]' derivation='None' name='[none:symbol:nk]' pivot='key' type='nominal' />
+            <column caption='Price' datatype='real' name='[price]' role='measure' type='quantitative' />
+            <column caption='Sector' datatype='string' name='[sector]' role='dimension' type='nominal' />
+            <column caption='Symbol' datatype='string' name='[symbol]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.00try8e0fmt8zm12xlzqd1jc8f7n].[none:companyName:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' value='5' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='width' field='[federated.00try8e0fmt8zm12xlzqd1jc8f7n].[none:companyName:nk]' value='124' />
+            <format attr='width' field='[federated.00try8e0fmt8zm12xlzqd1jc8f7n].[none:changePercentage:ok]' value='136' />
+            <format attr='width' field='[federated.00try8e0fmt8zm12xlzqd1jc8f7n].[none:industry:nk]' value='232' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='font-size' scope='cols' value='10' />
+            <format attr='text-format' field='[federated.00try8e0fmt8zm12xlzqd1jc8f7n].[none:changePercentage:ok]' value='n#,##0.00&quot;%&quot;;-#,##0.00&quot;%&quot;' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='font-size' value='14' />
+            <format attr='font-weight' value='bold' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.00try8e0fmt8zm12xlzqd1jc8f7n].[none:Calculation_1643250916317769728:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.00try8e0fmt8zm12xlzqd1jc8f7n].[none:symbol:nk] / ([federated.00try8e0fmt8zm12xlzqd1jc8f7n].[none:ceo:nk] / ([federated.00try8e0fmt8zm12xlzqd1jc8f7n].[none:price:ok] / ([federated.00try8e0fmt8zm12xlzqd1jc8f7n].[none:changePercentage:ok] / ([federated.00try8e0fmt8zm12xlzqd1jc8f7n].[none:industry:nk] / [federated.00try8e0fmt8zm12xlzqd1jc8f7n].[none:sector:nk])))))</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{217B93E7-DCBC-4084-A125-E94E4A7207AD}' />
+    </worksheet>
+    <worksheet name='Company Details 2'>
+      <layout-options>
+        <title>
+          <formatted-text />
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='company_financial_summary+ (FMP Report)' name='federated.00try8e0fmt8zm12xlzqd1jc8f7n' />
+          </datasources>
+          <datasource-dependencies datasource='federated.00try8e0fmt8zm12xlzqd1jc8f7n'>
+            <column caption='blank' datatype='string' name='[Calculation_1643250916317769728]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='&quot;&quot;' />
+            </column>
+            <column caption='City' datatype='string' name='[city]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+            <column caption='Company Name' datatype='string' name='[companyName]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_1643250916317769728]' derivation='None' name='[none:Calculation_1643250916317769728:nk]' pivot='key' type='nominal' />
+            <column-instance column='[city]' derivation='None' name='[none:city:nk]' pivot='key' type='nominal' />
+            <column-instance column='[companyName]' derivation='None' name='[none:companyName:nk]' pivot='key' type='nominal' />
+            <column-instance column='[state]' derivation='None' name='[none:state:nk]' pivot='key' type='nominal' />
+            <column-instance column='[website]' derivation='None' name='[none:website:nk]' pivot='key' type='nominal' />
+            <column caption='State' datatype='string' name='[state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column caption='Website' datatype='string' name='[website]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.00try8e0fmt8zm12xlzqd1jc8f7n].[none:companyName:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' value='5' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='width' field='[federated.00try8e0fmt8zm12xlzqd1jc8f7n].[none:companyName:nk]' value='124' />
+            <format attr='width' field='[federated.00try8e0fmt8zm12xlzqd1jc8f7n].[none:website:nk]' value='268' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='font-size' scope='cols' value='10' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='font-size' value='14' />
+            <format attr='font-weight' value='bold' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.00try8e0fmt8zm12xlzqd1jc8f7n].[none:Calculation_1643250916317769728:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.00try8e0fmt8zm12xlzqd1jc8f7n].[none:website:nk] / ([federated.00try8e0fmt8zm12xlzqd1jc8f7n].[none:state:nk] / [federated.00try8e0fmt8zm12xlzqd1jc8f7n].[none:city:nk]))</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{F4AC5396-9CF2-453F-917F-0EA0A40D1B65}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <style />
+      <size maxheight='860' maxwidth='1200' minheight='560' minwidth='1200' sizing-mode='range' />
+      <datasources>
+        <datasource caption='company_financial_summary+ (FMP Report)' name='federated.00try8e0fmt8zm12xlzqd1jc8f7n' />
+      </datasources>
+      <datasource-dependencies datasource='federated.00try8e0fmt8zm12xlzqd1jc8f7n'>
+        <column caption='Company Name' datatype='string' name='[companyName]' role='dimension' type='nominal' />
+        <column-instance column='[companyName]' derivation='None' name='[none:companyName:nk]' pivot='key' type='nominal' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98030' id='8' param='horz' type-v2='layout-flow' w='98666' x='667' y='985'>
+            <zone h='98030' id='6' type-v2='layout-basic' w='98666' x='667' y='985'>
+              <zone h='6035' id='3' name='Company Details' w='98666' x='667' y='7019'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='85961' id='5' name='Company Details 2' w='98666' x='667' y='13054'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='6034' id='9' mode='checkdropdown' name='Company Details' param='[federated.00try8e0fmt8zm12xlzqd1jc8f7n].[none:companyName:nk]' type-v2='filter' values='relevant' w='98666' x='667' y='985'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='2' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='84000' id='1' param='vert' type-v2='layout-flow' w='84000' x='8000' y='8000' />
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{E5649890-648D-4359-9737-4B208BDFCE94}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='worksheet' name='Company Details'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.00try8e0fmt8zm12xlzqd1jc8f7n].[none:companyName:nk]' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{ADDF774B-F92C-4817-ABE4-847EC2CD7D0C}' />
+    </window>
+    <window class='worksheet' name='Company Details 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{983AA883-36D7-4FA3-A212-BDB53E7FBA9D}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='Company Details' />
+        <viewpoint name='Company Details 2' />
+      </viewpoints>
+      <active id='9' />
+      <simple-id uuid='{19AFDDC2-476D-479B-BD7B-2221F1CA5D02}' />
+    </window>
+  </windows>
+</workbook>
