@@ -50,6 +50,7 @@ You may access my CV [here](CV_ADPH.pdf).
       + FMP Dashboard (data visualization, Looker Studio, Tableau, end-to-end ETL pipeline)
           + [Looker Studio](https://lookerstudio.google.com/reporting/9896e31d-efa0-4ff6-8493-f52110496c3c)
           + Tableau [[Page 1](https://public.tableau.com/views/FMPTableauDashboard/CompanyProfile?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)][[Page 2](https://public.tableau.com/views/FMPTableauDashboard/MarketComparison?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)]
+          + [Google Sheets Dashboard](https://docs.google.com/spreadsheets/d/1VzRRUCt46Upqxm7HiJiGPE4Y2lIH9EnHo2swDhYeM1U/edit?usp=sharing)
 
 
 ## Portfolio Projects
@@ -88,6 +89,7 @@ The dataset came from [data.gov](https://catalog.data.gov/dataset/motor-vehicle-
 ##### A. Links
 - [Looker Studio](https://lookerstudio.google.com/reporting/9896e31d-efa0-4ff6-8493-f52110496c3c)
 - Tableau [[Page 1](https://public.tableau.com/views/FMPTableauDashboard/CompanyProfile?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)][[Page 2](https://public.tableau.com/views/FMPTableauDashboard/MarketComparison?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)]
+- [Google Sheets Dashboard](https://docs.google.com/spreadsheets/d/1VzRRUCt46Upqxm7HiJiGPE4Y2lIH9EnHo2swDhYeM1U/edit?usp=sharing)
 
 ##### B. Skills
 data visualization, Looker Studio, end-to-end ETL pipeline
