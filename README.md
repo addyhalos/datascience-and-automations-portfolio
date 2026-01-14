@@ -71,8 +71,11 @@ This is a simple project that is automated through Zapier. It takes an entry fro
 **Form**: Tally
 
 **Step 1**: A response is submitted in Tally
+
 **Step 2**: Zapier starts running 
+
 **Step 3**: Email turned to lowercase if not yet in this form
+
 **Step 4**: Fixed email is checked among existing records
 
 **Step 5**:
