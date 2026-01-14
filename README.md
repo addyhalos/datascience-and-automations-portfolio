@@ -59,15 +59,15 @@ You may access my CV [here](CV_ADPH.pdf).
 
 ### Data Engineering
 #### I. [Leads Generated Workflow Automation](#i-leads-generated-workflow-automation)
-##### A. Tools and Skills 
+#### A. Tools and Skills 
 Zapier, Airtable, Tally, automation
 
-##### B. Description
+#### B. Description
 This is a simple project that showcases no-code automation skills using common tools in the industry.
 
 It is automated through Zapier. It takes an entry from the Tally form, makes sure the email is in lowercase, checks for duplicates, and finally after successful checks, adds the entry as a new record.
 
-##### C. Project Design
+#### C. Project Design
 **Automation Tool**: Zapier
 Tally > Formatter by Zapier > Airtable (Check Records) > Filter by Zapier > Airtable (Create Record)
 
@@ -93,46 +93,46 @@ Fields: email, first name, last name, phone number, company name, additional det
 **Else**: response is recorded with the corrected email
 
 #### II. [Emailed Report - FPA Monthly Registered Biofertilizers](data_engineering/FPA_Monthly_Registered_Biofertilizer_Process.ipynb) 
-##### A. Skills 
+#### A. Skills 
 javascript, etl, scraping, automation
 
-##### B. Description
+#### B. Description
 This is a scraping project that uses coded solution in Google App Script.
 
 This project takes the list of all registered products under the Fertilizer and Pesticide Authority from their [website](https://fpa.da.gov.ph/resources/reports/registered-products/) and filters the biofertilizer products that are based on the bacteria azospirillum. The Excel file is exported, contents are processed as a dataframe, azospirillum-based products are filtered, and finally sent as an email to specific recipients.
    
 #### III. [FMP ETL Pipeline - Scheduled Data Extraction of Company Financial Metrics](data_engineering/fmp_etl_documentation.ipynb) 
-##### A. Skills
+#### A. Skills
 end-to-end ETL pipeline, python, automation
 
-##### B. Description
+#### B. Description
 This project demonstrates a coded end-to-end ETL reporting pipeline.
 
 It starts from data extraction via [FMP API](https://site.financialmodelingprep.com/developer/docs) up to a fully-functioning dashboard. From data extraction, the data is loaded into staging tables in the [nyse_financials.db](data_engineering/data/nyse_financials.db) file in this repo. After data cleaning, it is loaded into the main tables in the same database. SQL queries built into the script are ran to summarize the data, and finally loaded into tabs in Google sheets. This sheet is used as data sources for both [Looker Studio](######links) and [Tableau](######links) dashboards.
 
 ### Data Analytics
 #### I. [Netflix Dashboard](https://lookerstudio.google.com/u/0/reporting/9a6ae993-fbbc-46e3-bca9-bc8e11692ad5/page/uP4YD) 
-##### A. Skills
+#### A. Skills
 data visualization, Looker Studio
 
-##### B. Description
+#### B. Description
 This is a dashboard based on an old dataset from Kaggle. It visualizes customer profile, such as gender, preferred gadget, subscription type, etc.
 
 #### II. [New York Vehicular Accidents](https://lookerstudio.google.com/reporting/8740bf9f-dbc6-4b88-ab55-8bf69f714c7f) 
-##### A. Skills
+#### A. Skills
 data visualization, Looker Studio
 
-##### B. Description
+#### B. Description
 The dataset came from [data.gov](https://catalog.data.gov/dataset/motor-vehicle-collisions-crashes). It gives a broken down view in order to analyze vehicular accidents in New York. Accidents are broken down into vehicle type, accident reason, death reason, etc.
 
 #### III. FMP Dashboard
-##### A. Links
+#### A. Links
 - [Looker Studio](https://lookerstudio.google.com/reporting/9896e31d-efa0-4ff6-8493-f52110496c3c)
 - Tableau [[Page 1](https://public.tableau.com/views/FMPTableauDashboard/CompanyProfile?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)][[Page 2](https://public.tableau.com/views/FMPTableauDashboard/MarketComparison?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)]
 - [Google Sheets Dashboard](https://docs.google.com/spreadsheets/d/1VzRRUCt46Upqxm7HiJiGPE4Y2lIH9EnHo2swDhYeM1U/edit?usp=sharing)
 
-##### B. Skills
+#### B. Skills
 data visualization, Looker Studio, end-to-end ETL pipeline
 
-##### C. Description
+#### C. Description
 These two dashboards on different platforms creates a visualization of the data extracted from the financial modeling prep API. The dashboards focus on the stock performance of five well-known companies in the USA.
