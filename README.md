@@ -67,8 +67,11 @@ This is a simple project that is automated through Zapier. It takes an entry fro
 
 ##### C. Project Design
 **Automation Tool**: Zapier
+
 **Database**: Airtable
+
 **Form**: Tally
+
 
 **Step 1**: A response is submitted in Tally
 
