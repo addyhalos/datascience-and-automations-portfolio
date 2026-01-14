@@ -67,10 +67,12 @@ This is a simple project that is automated through Zapier. It takes an entry fro
 
 ##### C. Project Design
 **Automation Tool**: Zapier
+Tally > Formatter by Zapier > Airtable (Check Records) > Filter by Zapier > Airtable (Create Record)
 
 **Database**: Airtable
+Fields: email, first name, last name, phone number, company name, additional details, status, source, created at
 
-**Form**: Tally
+**Form**: [Tally](https://tally.so/r/5B9276)
 
 
 **Step 1**: A response is submitted in Tally
