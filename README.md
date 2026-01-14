@@ -85,8 +85,11 @@ Fields: email, first name, last name, phone number, company name, additional det
 
 **Step 4**: Fixed email is checked among existing records
 
+
 **Step 5**:
+
 **If it already exists**: The record is not created in Airtable
+
 **Else**: response is recorded with the corrected email
 
 #### II. [Emailed Report - FPA Monthly Registered Biofertilizers](data_engineering/FPA_Monthly_Registered_Biofertilizer_Process.ipynb) 
