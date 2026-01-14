@@ -21,9 +21,10 @@ I made this repository to give you a taste of what I can do. Feel free to  brows
 You may access my CV [here](CV_ADPH.pdf).
 
 ### Core Skills
- * Data Analytics
- * Strategy
+ * Analytics and Strategy
  * Data Visualization
+ * Data Engineering
+ * Automation
  * SQL
  * Python
  * Javascript
@@ -42,6 +43,7 @@ You may access my CV [here](CV_ADPH.pdf).
 * [Contact Details](#contact-details)
 * Portfolio Projects
    * [Data Engineering](data_engineering)
+     - [Leads Generated Workflow Automation](#leads-generated-workflow-automation) (Zapier, Airtable, Tally, automation)
      - [Emailed Report - FPA Monthly Registered Biofertilizers](data_engineering/FPA_Monthly_Registered_Biofertilizer_Process.ipynb) (javascript, automation, scraping)
      - [FMP ETL Pipeline - Scheduled Data Extraction of Company Financial Metrics](data_engineering/fmp_etl_documentation.ipynb) (end-to-end ETL pipeline, python, automation)
    * [Data Analytics](data_analytics)
@@ -56,14 +58,35 @@ You may access my CV [here](CV_ADPH.pdf).
 ## Portfolio Projects
 
 ### Data Engineering
-#### I. [Emailed Report - FPA Monthly Registered Biofertilizers](data_engineering/FPA_Monthly_Registered_Biofertilizer_Process.ipynb) 
+#### I. Leads Generated Workflow Automation
+##### A. Tools and Skills 
+Zapier, Airtable, Tally, automation
+
+##### B. Description
+This is a simple project that is automated through Zapier. It takes an entry from the Tally form, makes sure the email is in lowercase, checks for duplicates, and finally after successful checks, adds the entry as a new record.
+
+##### C. Project Design
+**Automation Tool**: Zapier
+**Database**: Airtable
+**Form**: Tally
+
+**Step 1**: A response is submitted in Tally
+**Step 2**: Zapier starts running 
+**Step 3**: Email turned to lowercase if not yet in this form
+**Step 4**: Fixed email is checked among existing records
+
+**Step 5**:
+**If it already exists**: The record is not created in Airtable
+**Else**: response is recorded with the corrected email
+
+#### II. [Emailed Report - FPA Monthly Registered Biofertilizers](data_engineering/FPA_Monthly_Registered_Biofertilizer_Process.ipynb) 
 ##### A. Skills 
 javascript, etl, scraping, automation
 
 ##### B. Description
 This project takes the list of all registered products under the Fertilizer and Pesticide Authority from their [website]() and filters the biofertilizer products that are based on the bacteria azospirillum. The Excel file is exported, contents are processed as a dataframe, azospirillum-based products are filtered, and finally sent as an email to specific recipients.
    
-#### II. [FMP ETL Pipeline - Scheduled Data Extraction of Company Financial Metrics](data_engineering/fmp_etl_documentation.ipynb) 
+#### III. [FMP ETL Pipeline - Scheduled Data Extraction of Company Financial Metrics](data_engineering/fmp_etl_documentation.ipynb) 
 ##### A. Skills
 end-to-end ETL pipeline, python, automation
 
