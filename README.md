@@ -43,7 +43,7 @@ You may access my CV [here](CV_ADPH.pdf).
 * [Contact Details](#contact-details)
 * Portfolio Projects
    * [Data Engineering](data_engineering)
-     - [Leads Generated Workflow Automation](#i.-leads-generated-workflow-automation) (Zapier, Airtable, Tally, automation)
+     - [Leads Generated Workflow Automation](#i-leads-generated-workflow-automation) (Zapier, Airtable, Tally, automation)
      - [Emailed Report - FPA Monthly Registered Biofertilizers](data_engineering/FPA_Monthly_Registered_Biofertilizer_Process.ipynb) (javascript, automation, scraping)
      - [FMP ETL Pipeline - Scheduled Data Extraction of Company Financial Metrics](data_engineering/fmp_etl_documentation.ipynb) (end-to-end ETL pipeline, python, automation)
    * [Data Analytics](data_analytics)
