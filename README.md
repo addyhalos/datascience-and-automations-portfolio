@@ -63,7 +63,9 @@ You may access my CV [here](CV_ADPH.pdf).
 Zapier, Airtable, Tally, automation
 
 ##### B. Description
-This is a simple project that is automated through Zapier. It takes an entry from the Tally form, makes sure the email is in lowercase, checks for duplicates, and finally after successful checks, adds the entry as a new record.
+This is a simple project that showcases no-code automation skills using common tools in the industry.
+
+It is automated through Zapier. It takes an entry from the Tally form, makes sure the email is in lowercase, checks for duplicates, and finally after successful checks, adds the entry as a new record.
 
 ##### C. Project Design
 **Automation Tool**: Zapier
@@ -92,14 +94,18 @@ Fields: email, first name, last name, phone number, company name, additional det
 javascript, etl, scraping, automation
 
 ##### B. Description
-This project takes the list of all registered products under the Fertilizer and Pesticide Authority from their [website]() and filters the biofertilizer products that are based on the bacteria azospirillum. The Excel file is exported, contents are processed as a dataframe, azospirillum-based products are filtered, and finally sent as an email to specific recipients.
+This is a scraping project that uses coded solution in Google App Script.
+
+This project takes the list of all registered products under the Fertilizer and Pesticide Authority from their [website](https://fpa.da.gov.ph/resources/reports/registered-products/) and filters the biofertilizer products that are based on the bacteria azospirillum. The Excel file is exported, contents are processed as a dataframe, azospirillum-based products are filtered, and finally sent as an email to specific recipients.
    
 #### III. [FMP ETL Pipeline - Scheduled Data Extraction of Company Financial Metrics](data_engineering/fmp_etl_documentation.ipynb) 
 ##### A. Skills
 end-to-end ETL pipeline, python, automation
 
 ##### B. Description
-This project is part of an entire end-to-end ETL project starting from data extraction via [FMP API](https://site.financialmodelingprep.com/developer/docs) up to a fully-functioning dashboard. From data extraction, the data is loaded into staging tables in the [nyse_financials.db](data_engineering/data/nyse_financials.db) file in this repo. After data cleaning, it is loaded into the main tables in the same database. SQL queries built into the script are ran to summarize the data, and finally loaded into tabs in Google sheets. This sheet is used as data sources for both [Looker Studio](######links) and [Tableau](######links) dashboards.
+This project demonstrates a coded end-to-end ETL reporting pipeline.
+
+It starts from data extraction via [FMP API](https://site.financialmodelingprep.com/developer/docs) up to a fully-functioning dashboard. From data extraction, the data is loaded into staging tables in the [nyse_financials.db](data_engineering/data/nyse_financials.db) file in this repo. After data cleaning, it is loaded into the main tables in the same database. SQL queries built into the script are ran to summarize the data, and finally loaded into tabs in Google sheets. This sheet is used as data sources for both [Looker Studio](######links) and [Tableau](######links) dashboards.
 
 ### Data Analytics
 #### I. [Netflix Dashboard](https://lookerstudio.google.com/u/0/reporting/9a6ae993-fbbc-46e3-bca9-bc8e11692ad5/page/uP4YD) 
