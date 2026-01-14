@@ -58,7 +58,7 @@ You may access my CV [here](CV_ADPH.pdf).
 ## Portfolio Projects
 
 ### Data Engineering
-#### I. Leads Generated Workflow Automation
+#### I. [Leads Generated Workflow Automation](#i-leads-generated-workflow-automation)
 ##### A. Tools and Skills 
 Zapier, Airtable, Tally, automation
 
