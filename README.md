@@ -12,11 +12,11 @@ I have an extensive background in the ecommerce industry. I was a pioneer busine
 
 Today, I am freelancing, continually expanding my knowledge in all aspects of data science.
 
-During my time in these companies, I've developed my skills deeply in data analytics and engineering. I had front line experience in each company, working and learning largely on my own. I was given an opportunity to work in a special project that eventually grew into a fintech company known as SeaMoney, I established strategic plans to smoothen driver onboarding and optimize order matching with drivers in Lalafood, and held my own as the only data professional handling all regular reporting, analytics, and engineering at my last company. In my career, I've never backed down from a challenge, given that I'm always pushed to my boundaries in areas where my past companies have never been before.
+During my time in these companies, I've developed my skills deeply in data analytics and engineering. I had front line experience in each company, working and learning largely on my own. I was given an opportunity to work in a special project that eventually grew into a fintech company known as SeaMoney, I established strategic plans to smoothen driver onboarding and optimize order matching with drivers in Lalafood, and held my own as the only data professional handling all regular reporting, analytics, and engineering at my last company. In my career, I've never backed down from a challenge, given that I'm always pushed to my boundaries.
 
 Moreover, I would like to introduce the fact that I am a graduate of BS Agribusiness Management while finding success in data science. I believe that this should say a lot about how fast I can rise to the challenge of learning new skills as demanded by any task given to me.
 
-I made this repository to give you a taste of what I can do. Feel free to  browse, and reach out if you have any clarifications!
+I made this repository to give you a taste of what I can do. Feel free to  browse, and reach out if you need any clarifications.
 
 You may access my CV [here](CV_ADPH.pdf).
 
