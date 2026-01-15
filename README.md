@@ -8,7 +8,7 @@ Before anything else, I'd like to thank you for your interest in looking at my p
 
 Now, I'd like to give you an introduction to my background in data science. 
 
-I have an extensive background in the ecommerce industry. I was a pioneer business intelligence team member in Shopee Philippines, now an ecommerce industry giant in our country today. I eventually moved on to Lalafood, a food delivery sister company of the well-known on-demand logistics company Lalamove. My last full time job was with Zoom2u, an ASX-listed on-demand B2B logistics provider based in Sydney, Australia.
+I have an extensive background in the ecommerce industry. I was a pioneer business intelligence team member in Shopee Philippines, now an ecommerce industry giant in our country today. I eventually moved on to Lalafood, a food delivery sister company of the well-known on-demand logistics company Lalamove. My last full time job was with Zoom2u, an NZX-listed on-demand B2B logistics provider based in Sydney, Australia.
 
 Today, I am freelancing, continually expanding my knowledge in all aspects of data science.
 
