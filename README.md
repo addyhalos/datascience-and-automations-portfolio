@@ -1,138 +1,134 @@
-# Addy Halos - Data Science Portfolio
+# Addy Halos | Analytics Engineering Portfolio
 
-## About
+Analytics engineer with experience building end-to-end data workflows, from ETL pipelines to dashboards used for business reporting and decision-making. My work focuses on SQL, Python, data automation, BI dashboards, and turning raw data into usable business outputs.
 
-Hello, it's great to find you here! I am Addy, and it is very nice to meet you.
+## What This Portfolio Shows
 
-Before anything else, I'd like to thank you for your interest in looking at my page.
+- End-to-end ETL workflows using Python and SQL
+- API data extraction and reporting automation
+- Dashboard development in Looker Studio, Tableau, and Google Sheets
+- Business-focused analytics for operations, marketing, and financial data
 
-Now, I'd like to give you an introduction to my background in data science. 
+## Featured Project
 
-I have an extensive background in the ecommerce industry. I was a pioneer business intelligence team member in Shopee Philippines, now an ecommerce industry giant in our country today. I eventually moved on to Lalafood, a food delivery sister company of the well-known on-demand logistics company Lalamove. My last full time job was with Zoom2u, an NZX-listed on-demand B2B logistics provider based in Sydney, Australia.
+### Financial Market Data ETL Pipeline
 
-Today, I am freelancing, continually expanding my knowledge in all aspects of data science.
+End-to-end ETL pipeline that extracts company financial metrics from the Financial Modeling Prep API, loads them into a local database, transforms the data with SQL, and publishes reporting outputs to Google Sheets, Looker Studio, and Tableau.
 
-During my time in these companies, I've developed my skills deeply in data analytics and engineering. I had front line experience in each company, working and learning largely on my own. I was given an opportunity to work in a special project that eventually grew into a fintech company known as SeaMoney, I established strategic plans to smoothen driver onboarding and optimize order matching with drivers in Lalafood, and held my own as the only data professional handling all regular reporting, analytics, and engineering at my last company. In my career, I've never backed down from a challenge, given that I'm always pushed to my boundaries.
+**Pipeline Flow:**  
+FMP API → Python extraction → SQLite staging tables → SQL transformations → reporting tables → Google Sheets → Looker Studio / Tableau
 
-Moreover, I would like to introduce the fact that I am a graduate of BS Agribusiness Management while finding success in data science. I believe that this should say a lot about how fast I can rise to the challenge of learning new skills as demanded by any task given to me.
+**Tech Stack:** Python, SQL, SQLite, Google Sheets, Looker Studio, Tableau, FMP API  
+**Focus Areas:** API extraction, ETL, data modeling, reporting automation, dashboarding
 
-I made this repository to give you a taste of what I can do. Feel free to  browse, and reach out if you need any clarifications.
+**Project Links**
+- ETL Documentation: [FMP ETL Pipeline](data_engineering/fmp_etl_documentation.ipynb)
+- Looker Studio Dashboard: [View Dashboard](https://lookerstudio.google.com/reporting/9896e31d-efa0-4ff6-8493-f52110496c3c)
+- Tableau Dashboard Page 1: [Company Profile](https://public.tableau.com/views/FMPTableauDashboard/CompanyProfile?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
+- Tableau Dashboard Page 2: [Market Comparison](https://public.tableau.com/views/FMPTableauDashboard/MarketComparison?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
+- Google Sheets Dashboard: [View Sheet](https://docs.google.com/spreadsheets/d/1VzRRUCt46Upqxm7HiJiGPE4Y2lIH9EnHo2swDhYeM1U/edit?usp=sharing)
 
-You may access my CV [here](CV_ADPH.pdf).
+## Other Projects
 
-### Core Skills
- * Analytics and Strategy
- * Data Visualization
- * Data Engineering
- * Automation
- * SQL
- * Python
- * Javascript
- * ETL
- * Cloud Platform (AWS, Azure, GCP, etc.)
+### Leads Generated Workflow Automation
 
-### Contact Details
+Workflow automation using Tally, Zapier, and Airtable to clean lead submissions, check duplicate emails, and create validated lead records.
 
-- adrieldphalos@gmail.com
-- [LinkedIn](https://www.linkedin.com/in/addy-halos/)
+**Project Link:** [View Project](#leads-generated-workflow-automation)  
+**Form Demo:** [Tally Form](https://tally.so/r/5B9276)  
+**Tech Stack:** Zapier, Airtable, Tally  
+**Focus Areas:** Workflow automation, data validation, lead management, no-code operations
 
-   
-## Table of Contents
+### FPA Monthly Registered Biofertilizers Report
 
-* [About](#about)
-* [Contact Details](#contact-details)
-* Portfolio Projects
-   * [Data Engineering](data_engineering)
-     - [Leads Generated Workflow Automation](#i-leads-generated-workflow-automation) (Zapier, Airtable, Tally, automation)
-     - [Emailed Report - FPA Monthly Registered Biofertilizers](data_engineering/FPA_Monthly_Registered_Biofertilizer_Process.ipynb) (javascript, automation, scraping)
-     - [FMP ETL Pipeline - Scheduled Data Extraction of Company Financial Metrics](data_engineering/fmp_etl_documentation.ipynb) (end-to-end ETL pipeline, python, automation)
-   * [Data Analytics](data_analytics)
-      + [Netflix Dashboard](https://lookerstudio.google.com/u/0/reporting/9a6ae993-fbbc-46e3-bca9-bc8e11692ad5/page/uP4YD) (data visualization, Looker Studio)
-      + [New York Vehicular Accidents](https://lookerstudio.google.com/reporting/8740bf9f-dbc6-4b88-ab55-8bf69f714c7f) (data visualization, Looker Studio)
-      + FMP Dashboard (data visualization, Looker Studio, Tableau, end-to-end ETL pipeline)
-          + [Looker Studio](https://lookerstudio.google.com/reporting/9896e31d-efa0-4ff6-8493-f52110496c3c)
-          + Tableau [[Page 1](https://public.tableau.com/views/FMPTableauDashboard/CompanyProfile?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)][[Page 2](https://public.tableau.com/views/FMPTableauDashboard/MarketComparison?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)]
-          + [Google Sheets Dashboard](https://docs.google.com/spreadsheets/d/1VzRRUCt46Upqxm7HiJiGPE4Y2lIH9EnHo2swDhYeM1U/edit?usp=sharing)
+Automated reporting workflow that scrapes registered product data from the Fertilizer and Pesticide Authority, filters relevant biofertilizer products, and emails the output to recipients.
 
+**Project Link:** [View Notebook](data_engineering/FPA_Monthly_Registered_Biofertilizer_Process.ipynb)  
+**Data Source:** [FPA Registered Products](https://fpa.da.gov.ph/resources/reports/registered-products/)  
+**Tech Stack:** Google Apps Script, JavaScript, Spreadsheet automation  
+**Focus Areas:** Web scraping, automation, recurring reports
 
-## Portfolio Projects
+### Netflix Dashboard
 
-### Data Engineering
-#### I. [Leads Generated Workflow Automation](#i-leads-generated-workflow-automation)
-#### A. Tools and Skills 
-Zapier, Airtable, Tally, automation
+Dashboard built in Looker Studio to analyze user profiles, subscription types, preferred devices, and customer segments from a public dataset.
 
-#### B. Description
-This is a simple project that showcases no-code automation skills using common tools in the industry.
+**Project Link:** [View Dashboard](https://lookerstudio.google.com/u/0/reporting/9a6ae993-fbbc-46e3-bca9-bc8e11692ad5/page/uP4YD)  
+**Tech Stack:** Looker Studio  
+**Focus Areas:** Dashboard design, customer segmentation, data visualization
 
-It is automated through Zapier. It takes an entry from the Tally form, makes sure the email is in lowercase, checks for duplicates, and finally after successful checks, adds the entry as a new record.
+### New York Vehicular Accidents Dashboard
 
-#### C. Project Design
-**Automation Tool**: Zapier
-Tally > Formatter by Zapier > Airtable (Check Records) > Filter by Zapier > Airtable (Create Record)
+Dashboard built in Looker Studio to analyze accident patterns by vehicle type, cause, location, and severity using public crash data.
 
-**Database**: Airtable
-Fields: email, first name, last name, phone number, company name, additional details, status, source, created at
+**Project Link:** [View Dashboard](https://lookerstudio.google.com/reporting/8740bf9f-dbc6-4b88-ab55-8bf69f714c7f)  
+**Data Source:** [Motor Vehicle Collisions - Crashes](https://catalog.data.gov/dataset/motor-vehicle-collisions-crashes)  
+**Tech Stack:** Looker Studio  
+**Focus Areas:** Public data analysis, dashboarding, geographic and categorical analysis
 
-**Form**: [Tally](https://tally.so/r/5B9276)
+## Skills
 
+**Data Engineering:** ETL, API extraction, data pipelines, workflow automation  
+**Analytics:** SQL, business reporting, dashboarding, data visualization  
+**Tools:** Python, SQL, Google Sheets, Looker Studio, Tableau, Zapier, Airtable  
+**Cloud and Databases:** SQLite, Google Cloud Platform, Azure, AWS
 
-**Step 1**: A response is submitted in Tally
+## Background
 
-**Step 2**: Zapier starts running 
+I have worked across ecommerce, logistics, food delivery, and B2B operations, including roles at Shopee Philippines, Lalafood, and Zoom2u. My experience includes owning reporting workflows, building dashboards, automating recurring reports, and supporting business teams with analytics.
 
-**Step 3**: Email turned to lowercase if not yet in this form
+## Contact
 
-**Step 4**: Fixed email is checked among existing records
+- Email: adrieldphalos@gmail.com
+- LinkedIn: https://www.linkedin.com/in/addy-halos/
+- CV: [View CV](CV_ADPH.pdf)
 
+---
 
-**Step 5**:
+# Project Details
 
-**If it already exists**: The record is not created in Airtable
+## Leads Generated Workflow Automation
 
-**Else**: response is recorded with the corrected email
+### Overview
 
-#### II. [Emailed Report - FPA Monthly Registered Biofertilizers](data_engineering/FPA_Monthly_Registered_Biofertilizer_Process.ipynb) 
-#### A. Skills 
-javascript, etl, scraping, automation
+This project demonstrates a no-code workflow automation process for capturing, cleaning, validating, and storing lead submissions.
 
-#### B. Description
-This is a scraping project that uses coded solution in Google App Script.
+The workflow starts with a Tally form submission, standardizes the email address, checks whether the lead already exists in Airtable, and creates a new record only when the email is not a duplicate.
 
-This project takes the list of all registered products under the Fertilizer and Pesticide Authority from their [website](https://fpa.da.gov.ph/resources/reports/registered-products/) and filters the biofertilizer products that are based on the bacteria azospirillum. The Excel file is exported, contents are processed as a dataframe, azospirillum-based products are filtered, and finally sent as an email to specific recipients.
-   
-#### III. [FMP ETL Pipeline - Scheduled Data Extraction of Company Financial Metrics](data_engineering/fmp_etl_documentation.ipynb) 
-#### A. Skills
-end-to-end ETL pipeline, python, automation
+### Workflow
 
-#### B. Description
-This project demonstrates a coded end-to-end ETL reporting pipeline.
+Tally Form → Formatter by Zapier → Airtable Duplicate Check → Filter by Zapier → Airtable Create Record
 
-It starts from data extraction via [FMP API](https://site.financialmodelingprep.com/developer/docs) up to a fully-functioning dashboard. From data extraction, the data is loaded into staging tables in the [nyse_financials.db](data_engineering/data/nyse_financials.db) file in this repo. After data cleaning, it is loaded into the main tables in the same database. SQL queries built into the script are ran to summarize the data, and finally loaded into tabs in Google sheets. This sheet is used as data sources for both [Looker Studio](######links) and [Tableau](######links) dashboards.
+### Tools Used
 
-### Data Analytics
-#### I. [Netflix Dashboard](https://lookerstudio.google.com/u/0/reporting/9a6ae993-fbbc-46e3-bca9-bc8e11692ad5/page/uP4YD) 
-#### A. Skills
-data visualization, Looker Studio
+- Tally
+- Zapier
+- Airtable
 
-#### B. Description
-This is a dashboard based on an old dataset from Kaggle. It visualizes customer profile, such as gender, preferred gadget, subscription type, etc.
+### Process
 
-#### II. [New York Vehicular Accidents](https://lookerstudio.google.com/reporting/8740bf9f-dbc6-4b88-ab55-8bf69f714c7f) 
-#### A. Skills
-data visualization, Looker Studio
+1. A user submits a lead form through Tally.
+2. Zapier receives the form submission.
+3. The email address is converted to lowercase for standardization.
+4. Airtable is checked for an existing record with the same email.
+5. If the email already exists, no new record is created.
+6. If the email does not exist, a new lead record is added to Airtable.
 
-#### B. Description
-The dataset came from [data.gov](https://catalog.data.gov/dataset/motor-vehicle-collisions-crashes). It gives a broken down view in order to analyze vehicular accidents in New York. Accidents are broken down into vehicle type, accident reason, death reason, etc.
+### Airtable Fields
 
-#### III. FMP Dashboard
-#### A. Links
-- [Looker Studio](https://lookerstudio.google.com/reporting/9896e31d-efa0-4ff6-8493-f52110496c3c)
-- Tableau [[Page 1](https://public.tableau.com/views/FMPTableauDashboard/CompanyProfile?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)][[Page 2](https://public.tableau.com/views/FMPTableauDashboard/MarketComparison?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)]
-- [Google Sheets Dashboard](https://docs.google.com/spreadsheets/d/1VzRRUCt46Upqxm7HiJiGPE4Y2lIH9EnHo2swDhYeM1U/edit?usp=sharing)
+- Email
+- First name
+- Last name
+- Phone number
+- Company name
+- Additional details
+- Status
+- Source
+- Created at
 
-#### B. Skills
-data visualization, Looker Studio, end-to-end ETL pipeline
+### What This Demonstrates
 
-#### C. Description
-These two dashboards on different platforms creates a visualization of the data extracted from the financial modeling prep API. The dashboards focus on the stock performance of five well-known companies in the USA.
+- Workflow automation
+- Data validation
+- Duplicate checking
+- Lead capture process design
+- No-code operational tooling
