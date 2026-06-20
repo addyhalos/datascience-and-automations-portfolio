@@ -1,4 +1,4 @@
-# Addy Halos | Analytics Engineering Portfolio
+# Addy Halos | Analytics Engineering and Automations Portfolio
 
 Analytics engineer with experience building end-to-end data workflows, from ETL pipelines to dashboards used for business reporting and decision-making. My work focuses on data infrastructure design, data workflow automation, BI dashboards, and turning raw data into usable business outputs.
 
@@ -80,7 +80,7 @@ I have worked across ecommerce, logistics, food delivery, and B2B operations, in
 
 - Email: adrieldphalos@gmail.com
 - LinkedIn: https://www.linkedin.com/in/addy-halos/
-- CV: [View CV](CV_ADPH.pdf)
+- CV: [View CV](https://canva.link/jc4ya0njid9qod7)
 
 ---
 
