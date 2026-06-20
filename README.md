@@ -1,6 +1,6 @@
 # Addy Halos | Analytics Engineering Portfolio
 
-Analytics engineer with experience building end-to-end data workflows, from ETL pipelines to dashboards used for business reporting and decision-making. My work focuses on SQL, Python, data automation, BI dashboards, and turning raw data into usable business outputs.
+Analytics engineer with experience building end-to-end data workflows, from ETL pipelines to dashboards used for business reporting and decision-making. My work focuses on data infrastructure design, data workflow automation, BI dashboards, and turning raw data into usable business outputs.
 
 ## What This Portfolio Shows
 
